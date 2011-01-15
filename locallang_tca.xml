@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>language labels for me_google_calendar BE forms</description>
+		<type>database</type>
+		<csh_table></csh_table>
+		<fileId>EXT:me_google_calendar/locallang_tca.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="me_google_calendar">Google Calendar</label>
+			<label index="me_google_calendar.pi_flexform.sheet_general">General Settings</label>
+			<label index="me_google_calendar.pi_flexform.what_to_display">What to display:</label>
+			<label index="me_google_calendar.pi_flexform.CALENDAR">Google Calendar</label>
+			<label index="me_google_calendar.pi_flexform.defaultView">Default view</label>
+			<label index="me_google_calendar.pi_flexform.defaultView_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaDay">Day</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaWeek">Week</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.month">Month</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicDay">Day list</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicWeek">Week list</label>
+			<label index="me_google_calendar.pi_flexform.hideTitle">Hide Title</label>
+			<label index="me_google_calendar.pi_flexform.allDaySlot">Show all day slot</label>
+			<label index="me_google_calendar.pi_flexform.weekends">Show Weekends</label>
+			<label index="me_google_calendar.pi_flexform.minTime">Min time</label>
+			<label index="me_google_calendar.pi_flexform.maxTime">Max time</label>
+			<label index="me_google_calendar.pi_flexform.firstHour">First our</label>
+			<label index="me_google_calendar.pi_flexform.weekMode">Week mode</label>
+			<label index="me_google_calendar.pi_flexform.weekMode_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.fixed">Fixed</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.variable">Variable</label>
+			<label index="me_google_calendar.pi_flexform.firstDay">First day of week</label>
+			<label index="me_google_calendar.pi_flexform.firstDay_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.0">Sunday</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.1">Monday</label>
+			<label index="me_google_calendar.pi_flexform.sheet_header">Header</label>
+			<label index="me_google_calendar.pi_flexform.hideHeader">Hide Header</label>
+			<label index="me_google_calendar.pi_flexform.headerLeft">Header left</label>
+			<label index="me_google_calendar.pi_flexform.headerCenter">Header center</label>
+			<label index="me_google_calendar.pi_flexform.headerRight">Header right</label>
+			<label index="me_google_calendar.pi_flexform.header.I.title">Title</label>
+			<label index="me_google_calendar.pi_flexform.header.I.prev">Prev</label>
+			<label index="me_google_calendar.pi_flexform.header.I.next">Next</label>
+			<label index="me_google_calendar.pi_flexform.header.I.today">Today</label>
+			<label index="me_google_calendar.pi_flexform.header.I.month">Month</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaWeek">Week</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaDay">Day</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicWeek">Week list</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicDay">Day list</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space1">[SPACE1]</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space2">[SPACE2]</label>
+			<label index="me_google_calendar.pi_flexform.sheet_misc">Other Settings</label>
+			<label index="me_google_calendar.pi_flexform.cssThemePath_ref">Theme CSS file reference</label>
+			<label index="me_google_calendar.pi_flexform.recursive">Recursive level selection:</label>
+			<label index="me_google_calendar.pi_flexform.recursive_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.recursive.I.0">0 levels</label>
+			<label index="me_google_calendar.pi_flexform.startingpoint">Page(s) with google calendar feed records</label>
+			<label index="me_google_calendar.pi_flexform.tsconfig">Typoscript for this content element (plugin.me_google_calendar.[your TS])</label>
+			<label index="me_google_calendar.pi_flexform.yes">Yes</label>
+			<label index="me_google_calendar.pi_flexform.no">No</label>
+			<label index="me_google_calendar.uid">ID:</label>
+			<label index="me_google_calendar.tstamp">Last change:</label>
+			<label index="me_google_calendar.pid">Page:</label>
+			<label index="me_google_calendar.pi_flexform.sheet_eventdetails">Event Details Settings</label>
+			<label index="me_google_calendar.pi_flexform.hideIcalDownloadButton">Hide iCal download button</label>
+			<label index="me_google_calendar.pi_flexform.hideAddtoGoogleCalendarButton">Hide add to Google Calendar button</label>
+			<label index="me_google_calendar.pi_flexform.noGoogleMapsLink">Do not generate link to Google Maps</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="me_google_calendar">Google Kalender</label>
+			<label index="me_google_calendar.pi_flexform.sheet_general">Allgemeine Einstellungen</label>
+			<label index="me_google_calendar.pi_flexform.what_to_display">Ansicht:</label>
+			<label index="me_google_calendar.pi_flexform.CALENDAR">Google Kalender</label>
+			<label index="me_google_calendar.pi_flexform.defaultView">Standard Anzeige</label>
+			<label index="me_google_calendar.pi_flexform.defaultView_TS">Definiert durch TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaDay">Tag</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaWeek">Woche</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.month">Monat</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicDay">Tagesliste</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicWeek">Wochenliste</label>
+			<label index="me_google_calendar.pi_flexform.hideTitle">Verstecke Titel</label>
+			<label index="me_google_calendar.pi_flexform.allDaySlot">Zeige ganztage Ereignisse</label>
+			<label index="me_google_calendar.pi_flexform.weekends">Zeige Wochenenden</label>
+			<label index="me_google_calendar.pi_flexform.minTime">Min Zeit</label>
+			<label index="me_google_calendar.pi_flexform.maxTime">Max Zeit</label>
+			<label index="me_google_calendar.pi_flexform.firstHour">Erste Stunde</label>
+			<label index="me_google_calendar.pi_flexform.weekMode">Wochen Modus</label>
+			<label index="me_google_calendar.pi_flexform.weekMode_TS">Definiert durch TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.fixed">Fest</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.variable">Variabel</label>
+			<label index="me_google_calendar.pi_flexform.firstDay">Erster Tag der Woche</label>
+			<label index="me_google_calendar.pi_flexform.firstDay_TS">Definiert durch TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.0">Sonntag</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.1">Montag</label>
+			<label index="me_google_calendar.pi_flexform.sheet_header">Kopfzeile</label>
+			<label index="me_google_calendar.pi_flexform.hideHeader">Verstecke Header</label>
+			<label index="me_google_calendar.pi_flexform.headerLeft">Kopfzeile Links</label>
+			<label index="me_google_calendar.pi_flexform.headerCenter">Kopfzeile Mitte</label>
+			<label index="me_google_calendar.pi_flexform.headerRight">Kopfzeile Rechts</label>
+			<label index="me_google_calendar.pi_flexform.header.I.title">Titel</label>
+			<label index="me_google_calendar.pi_flexform.header.I.prev">Zurück</label>
+			<label index="me_google_calendar.pi_flexform.header.I.next">Vor</label>
+			<label index="me_google_calendar.pi_flexform.header.I.today">Heute</label>
+			<label index="me_google_calendar.pi_flexform.header.I.month">Monat</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaWeek">Woche</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaDay">Tag</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicWeek">Wochenliste</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicDay">Tagesliste</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space1">[ABSTAND1]</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space2">[ABSTAND2]</label>
+			<label index="me_google_calendar.pi_flexform.sheet_misc">Sonstige Einstellungen</label>
+			<label index="me_google_calendar.pi_flexform.cssThemePath_ref">Theme CSS Datei Referenz</label>
+			<label index="me_google_calendar.pi_flexform.recursive">Rekursiv:</label>
+			<label index="me_google_calendar.pi_flexform.recursive_TS">Definiert durch TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.recursive.I.0">0 Level</label>
+			<label index="me_google_calendar.pi_flexform.startingpoint">Seite(n) mit Google Kalender Feed Datensätzen</label>
+			<label index="me_google_calendar.pi_flexform.tsconfig">Typoscript für dieses Content Element (plugin.me_google_calendar.[Ihr TS])</label>
+			<label index="me_google_calendar.pi_flexform.yes">Ja</label>
+			<label index="me_google_calendar.pi_flexform.no">Nein</label>
+			<label index="me_google_calendar.pi_flexform.sheet_eventdetails">Event Details Einstellungen</label>
+			<label index="me_google_calendar.pi_flexform.hideIcalDownloadButton">Verstecke iCal Download Schaltfläche</label>
+			<label index="me_google_calendar.pi_flexform.hideAddtoGoogleCalendarButton">Verstecke Google Calendar Schaltfläche</label>
+			<label index="me_google_calendar.pi_flexform.noGoogleMapsLink">Generiere keinen Link zu Google Maps</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="me_google_calendar" type="integer">76696563</label>
+			<label index="me_google_calendar.pi_flexform.sheet_general" type="integer">86983571</label>
+			<label index="me_google_calendar.pi_flexform.what_to_display" type="integer">185349833</label>
+			<label index="me_google_calendar.pi_flexform.CALENDAR" type="integer">76696563</label>
+			<label index="me_google_calendar.pi_flexform.defaultView" type="integer">107550052</label>
+			<label index="me_google_calendar.pi_flexform.defaultView_TS" type="integer">215933041</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaDay" type="integer">3614636</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaWeek" type="integer">221044745</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.month" type="integer">130791557</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicDay" type="integer">42073074</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicWeek" type="integer">128100031</label>
+			<label index="me_google_calendar.pi_flexform.hideTitle" type="integer">221838712</label>
+			<label index="me_google_calendar.pi_flexform.allDaySlot" type="integer">110434240</label>
+			<label index="me_google_calendar.pi_flexform.weekends" type="integer">140353234</label>
+			<label index="me_google_calendar.pi_flexform.minTime" type="integer">88848890</label>
+			<label index="me_google_calendar.pi_flexform.maxTime" type="integer">166788757</label>
+			<label index="me_google_calendar.pi_flexform.firstHour" type="integer">57366532</label>
+			<label index="me_google_calendar.pi_flexform.weekMode" type="integer">44781798</label>
+			<label index="me_google_calendar.pi_flexform.weekMode_TS" type="integer">215933041</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.fixed" type="integer">71662916</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.variable" type="integer">75240580</label>
+			<label index="me_google_calendar.pi_flexform.firstDay" type="integer">244334007</label>
+			<label index="me_google_calendar.pi_flexform.firstDay_TS" type="integer">215933041</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.0" type="integer">164733076</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.1" type="integer">116937262</label>
+			<label index="me_google_calendar.pi_flexform.sheet_header" type="integer">200609118</label>
+			<label index="me_google_calendar.pi_flexform.hideHeader" type="integer">188595043</label>
+			<label index="me_google_calendar.pi_flexform.headerLeft" type="integer">76273765</label>
+			<label index="me_google_calendar.pi_flexform.headerCenter" type="integer">130755576</label>
+			<label index="me_google_calendar.pi_flexform.headerRight" type="integer">184975531</label>
+			<label index="me_google_calendar.pi_flexform.header.I.title" type="integer">192455458</label>
+			<label index="me_google_calendar.pi_flexform.header.I.prev" type="integer">21115089</label>
+			<label index="me_google_calendar.pi_flexform.header.I.next" type="integer">17482704</label>
+			<label index="me_google_calendar.pi_flexform.header.I.today" type="integer">31267935</label>
+			<label index="me_google_calendar.pi_flexform.header.I.month" type="integer">130791557</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaWeek" type="integer">221044745</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaDay" type="integer">3614636</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicWeek" type="integer">128100031</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicDay" type="integer">42073074</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space1" type="integer">257929014</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space2" type="integer">89766347</label>
+			<label index="me_google_calendar.pi_flexform.sheet_misc" type="integer">176871661</label>
+			<label index="me_google_calendar.pi_flexform.cssThemePath_ref" type="integer">218584633</label>
+			<label index="me_google_calendar.pi_flexform.recursive" type="integer">142456576</label>
+			<label index="me_google_calendar.pi_flexform.recursive_TS" type="integer">215933041</label>
+			<label index="me_google_calendar.pi_flexform.recursive.I.0" type="integer">212284357</label>
+			<label index="me_google_calendar.pi_flexform.startingpoint" type="integer">220277542</label>
+			<label index="me_google_calendar.pi_flexform.tsconfig" type="integer">151018188</label>
+			<label index="me_google_calendar.pi_flexform.yes" type="integer">154974727</label>
+			<label index="me_google_calendar.pi_flexform.no" type="integer">196073266</label>
+			<label index="me_google_calendar.pi_flexform.sheet_eventdetails" type="integer">86411258</label>
+			<label index="me_google_calendar.pi_flexform.hideIcalDownloadButton" type="integer">244993418</label>
+			<label index="me_google_calendar.pi_flexform.hideAddtoGoogleCalendarButton" type="integer">220774757</label>
+			<label index="me_google_calendar.pi_flexform.noGoogleMapsLink" type="integer">160776215</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="me_google_calendar">Google Calendar</label>
+			<label index="me_google_calendar.pi_flexform.sheet_general">General Settings</label>
+			<label index="me_google_calendar.pi_flexform.what_to_display">What to display:</label>
+			<label index="me_google_calendar.pi_flexform.CALENDAR">Google Calendar</label>
+			<label index="me_google_calendar.pi_flexform.defaultView">Default view</label>
+			<label index="me_google_calendar.pi_flexform.defaultView_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaDay">Day</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.agendaWeek">Week</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.month">Month</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicDay">Day list</label>
+			<label index="me_google_calendar.pi_flexform.defaultView.I.basicWeek">Week list</label>
+			<label index="me_google_calendar.pi_flexform.hideTitle">Hide Title</label>
+			<label index="me_google_calendar.pi_flexform.allDaySlot">Show all day slot</label>
+			<label index="me_google_calendar.pi_flexform.weekends">Show Weekends</label>
+			<label index="me_google_calendar.pi_flexform.minTime">Min time</label>
+			<label index="me_google_calendar.pi_flexform.maxTime">Max time</label>
+			<label index="me_google_calendar.pi_flexform.firstHour">First our</label>
+			<label index="me_google_calendar.pi_flexform.weekMode">Week mode</label>
+			<label index="me_google_calendar.pi_flexform.weekMode_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.fixed">Fixed</label>
+			<label index="me_google_calendar.pi_flexform.weekMode.I.variable">Variable</label>
+			<label index="me_google_calendar.pi_flexform.firstDay">First day of week</label>
+			<label index="me_google_calendar.pi_flexform.firstDay_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.0">Sunday</label>
+			<label index="me_google_calendar.pi_flexform.firstDay.I.1">Monday</label>
+			<label index="me_google_calendar.pi_flexform.sheet_header">Header</label>
+			<label index="me_google_calendar.pi_flexform.hideHeader">Hide Header</label>
+			<label index="me_google_calendar.pi_flexform.headerLeft">Header left</label>
+			<label index="me_google_calendar.pi_flexform.headerCenter">Header center</label>
+			<label index="me_google_calendar.pi_flexform.headerRight">Header right</label>
+			<label index="me_google_calendar.pi_flexform.header.I.title">Title</label>
+			<label index="me_google_calendar.pi_flexform.header.I.prev">Prev</label>
+			<label index="me_google_calendar.pi_flexform.header.I.next">Next</label>
+			<label index="me_google_calendar.pi_flexform.header.I.today">Today</label>
+			<label index="me_google_calendar.pi_flexform.header.I.month">Month</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaWeek">Week</label>
+			<label index="me_google_calendar.pi_flexform.header.I.agendaDay">Day</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicWeek">Week list</label>
+			<label index="me_google_calendar.pi_flexform.header.I.basicDay">Day list</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space1">[SPACE1]</label>
+			<label index="me_google_calendar.pi_flexform.header.I.space2">[SPACE2]</label>
+			<label index="me_google_calendar.pi_flexform.sheet_misc">Other Settings</label>
+			<label index="me_google_calendar.pi_flexform.cssThemePath_ref">Theme CSS file reference</label>
+			<label index="me_google_calendar.pi_flexform.recursive">Recursive level selection:</label>
+			<label index="me_google_calendar.pi_flexform.recursive_TS">Defined by TypoScript</label>
+			<label index="me_google_calendar.pi_flexform.startingpoint">Page(s) with google calendar feed records</label>
+			<label index="me_google_calendar.pi_flexform.tsconfig">Typoscript for this content element (plugin.me_google_calendar.[your TS])</label>
+			<label index="me_google_calendar.pi_flexform.yes">Yes</label>
+			<label index="me_google_calendar.pi_flexform.no">No</label>
+			<label index="me_google_calendar.pi_flexform.recursive.I.0">0 levels</label>
+			<label index="me_google_calendar.pi_flexform.sheet_eventdetails">Event Details Settings</label>
+			<label index="me_google_calendar.pi_flexform.hideIcalDownloadButton">Hide iCal download button</label>
+			<label index="me_google_calendar.pi_flexform.hideAddtoGoogleCalendarButton">Hide add to Google Calendar button</label>
+			<label index="me_google_calendar.pi_flexform.noGoogleMapsLink">Do not generate link to Google Maps</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>
