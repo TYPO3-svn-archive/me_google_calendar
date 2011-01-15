@@ -1,102 +1,120 @@
-plugin.megooglecalendar {
+plugin.tx_megooglecalendar_pi1 {
 
-# cat=megooglecalendar/file/feed/1; type=string; label=Pids of google calendar feed entries;
-pages =
+# cat=plugin.megooglecalendar/file/10; type=string; label=Path to css file: Default - EXT:me_google_calendar/res/fullcalendar.css;
+cssPath = EXT:me_google_calendar/res/fullcalendar.css
 
-# cat=megooglecalendar/file/feed/2; type=int+; label=Recursive level: Default - 0;
-recursive = 0
+# cat=plugin.megooglecalendar/file/20; type=string; label=Path to theme css file: Default - EXT:me_google_calendar/res/themes/smoothness/jquery-ui-1.8.6.custom.css;
+cssThemePath = EXT:me_google_calendar/res/themes/smoothness/jquery-ui-1.8.6.custom.css
 
-# cat=megooglecalendar/file/css/1; type=string; label=Path to css file: Default - typo3conf/ext/me_google_calendar/res/fullcalendar.css;
-cssPath = typo3conf/ext/me_google_calendar/res/fullcalendar.css
+# cat=plugin.megooglecalendar/file/30; type=string; label=Path to jQuery file: Default - EXT:me_google_calendar/res/jquery/jquery-1.4.4.min.js;
+jQueryPath = EXT:me_google_calendar/res/jquery/jquery-1.4.4.min.js
 
-# cat=megooglecalendar/file/css/2; type=string; label=Path to theme css file: Default - typo3conf/ext/me_google_calendar/res/theme.css;
-cssThemePath = typo3conf/ext/me_google_calendar/res/theme.css
+# cat=plugin.megooglecalendar/file/40; type=string; label=Path to jQuery Ui file: Default - EXT:me_google_calendar/res/jquery/jquery-ui-1.8.6.custom.min.js;
+jQueryUiPath = EXT:me_google_calendar/res/jquery/jquery-ui-1.8.6.custom.min.js
 
-# cat=megooglecalendar/file/jquery/1; type=string; label=Path to jQuery file: Default - typo3conf/ext/me_google_calendar/res/jquery/jquery-1.4.1.min.js;
-jQueryPath = typo3conf/ext/me_google_calendar/res/jquery/jquery-1.4.1.min.js
+# cat=plugin.megooglecalendar/file/50; type=string; label=Path to jQuery plugin fullcalendar file: Default - EXT:me_google_calendar/res/fullcalendar.min.js;
+jQueryPluginPath = EXT:me_google_calendar/res/fullcalendar.min.js
 
-# cat=megooglecalendar/file/jquery/2; type=string; label=Path to jQuery file: Default - typo3conf/ext/me_google_calendar/res/jquery/jquery.js;
-jQueryUiCorePath = typo3conf/ext/me_google_calendar/res/jquery/ui.core.js
+# cat=plugin.megooglecalendar/file/60; type=string; label=Path to jQuery plugin gcal file: Default - EXT:me_google_calendar/res/gcal.js;
+gcalPath = EXT:me_google_calendar/res/gcal.js
 
-# cat=megooglecalendar/file/jquery/3; type=string; label=Path to jQuery file: Default - typo3conf/ext/me_google_calendar/res/jquery/jquery.js;
-jQueryUiDraggablePath = typo3conf/ext/me_google_calendar/res/jquery/ui.draggable.js
-
-# cat=megooglecalendar/file/jquery/4; type=string; label=Path to jQuery file: Default - typo3conf/ext/me_google_calendar/res/jquery/jquery.js;
-jQueryUiResizablePath = typo3conf/ext/me_google_calendar/res/jquery/ui.resizable.js
-
-# cat=megooglecalendar/jquery/1; type=boolean; label=Enable jQuery globally;
+# cat=plugin.megooglecalendar/enable/10; type=boolean; label=Enable jQuery globally: Default - No;
 enableGlobal = 0
 
-# cat=megooglecalendar/jquery/2; type=boolean; label=Enable jQuery ui globally;
+# cat=plugin.megooglecalendar/enable/20; type=boolean; label=Enable jQuery ui globally: Default - No;
 enableUiGlobal = 0
 
-# cat=megooglecalendar/jquery/3; type=boolean; label=Enable jQuery draggable globally;
-enableDraggableGlobal = 0
-
-# cat=megooglecalendar/jquery/4; type=boolean; label=Enable jQuery resizable globally;
-enableResizableGlobal = 0
-
-# cat=megooglecalendar/jquery/5; type=boolean; label=Enable jQuery no conflict mode: Default - No;
+# cat=plugin.megooglecalendar/enable/30; type=boolean; label=Enable jQuery no conflict mode: Default - No;
 jQueryNoConflict = 0
 
-# cat=megooglecalendar/general/header/1; type=string; label=Left header content: Default - prev,next today - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
+# cat=plugin.megooglecalendar/enable/40; type=boolean; label=Javascript in Footer: If set, the Javascript will be rendered in Footer
+jsInFooter = 0
+
+# cat=plugin.megooglecalendar/enable/50; type=boolean; label=Minify Javascript: If set, the Javascript will be minified
+jsMinify = 0
+
+# cat=plugin.megooglecalendar/enable/60; type=boolean; label=Inline Javascript: If set, the Javascript will be put inline
+jsInline = 0
+
+# cat=plugin.megooglecalendar/content/010; type=string; label=Pids of google calendar feed entries;
+pages =
+
+# cat=plugin.megooglecalendar/content/020; type=int+; label=Recursive level: Default - 0;
+recursive = 0
+
+# cat=plugin.megooglecalendar/content/025; type=boolean; label=hide header content: Default - 0;
+hideHeader = 0
+
+# cat=plugin.megooglecalendar/content/030; type=string; label=Left header content: Default - prev,next today - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
 headerLeft = prev,next today
 
-# cat=megooglecalendar/general/header/2; type=string; label=Center header content: Default - title - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
+# cat=plugin.megooglecalendar/content/040; type=string; label=Center header content: Default - title - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
 headerCenter = title
 
-# cat=megooglecalendar/general/header/3; type=string; label=Right header content: Default - month,agendaWeek,agendaDay - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
+# cat=plugin.megooglecalendar/content/050; type=string; label=Right header content: Default - month,agendaWeek,agendaDay - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
 headerRight = month,agendaWeek,agendaDay
 
-# cat=megooglecalendar/11; type=string; label=Default view: Default - agendaWeek - Allowed - month,agendaWeek,agendaDay,basicWeek,basicDay;
+# cat=plugin.megooglecalendar/content/060; type=string; label=Default view: Default - agendaWeek - Allowed - month,agendaWeek,agendaDay,basicWeek,basicDay;
 defaultView = agendaWeek
 
-# cat=megooglecalendar/13; type=boolean; label=Show all day slot;
+# cat=plugin.megooglecalendar/content/070; type=boolean; label=Show all day slot;
 allDaySlot = 0
 
-# cat=megooglecalendar/general/range/1; type=options[Monday=1, Sunday=0]; label=First day of week;
+# cat=plugin.megooglecalendar/content/080; type=options[Monday=1, Sunday=0]; label=First day of week;
 firstDay = 0
 
-# cat=megooglecalendar/general/range/2; type=boolean; label=Show weekends;
+# cat=plugin.megooglecalendar/content/090; type=boolean; label=Show weekends;
 weekends = 0
 
-# cat=megooglecalendar/general/range/3; type=string; label=Min time: Default - 0;
+# cat=plugin.megooglecalendar/content/100; type=string; label=Min time: Default - 0;
 minTime = 0
 
-# cat=megooglecalendar/general/range/4; type=string; label=Max time: Default - 24;
+# cat=plugin.megooglecalendar/content/110; type=string; label=Max time: Default - 24;
 maxTime = 24
 
-# cat=megooglecalendar/general/range/5; type=string; label=First hour of day;
+# cat=plugin.megooglecalendar/content/120; type=string; label=First hour of day;
 firstHour = 8
 
-# cat=megooglecalendar/general/range/5; type=options[fixed=fixed, variable=variable]; label=Week mode: Default - variable;
+# cat=plugin.megooglecalendar/content/130; type=options[fixed=fixed, variable=variable]; label=Week mode: Default - variable;
 weekMode = variable
 
-# cat=megooglecalendar/general/titleformat/1; type=string; label=Title format month: Default - MMMM yyyy;
+# cat=plugin.megooglecalendar/content/135; type=boolean; label=hide title content: Default - 0;
+hideTitle = 0
+
+# cat=plugin.megooglecalendar/content/140; type=string; label=Title format month: Default - MMMM yyyy;
 titleFormat.month = MMMM yyyy
 
-# cat=megooglecalendar/general/titleformat/2; type=string; label=Title format week: Default - d. MMM[ yyyy]{ '&#8212,' d. [ MMM] yyyy};
+# cat=plugin.megooglecalendar/content/150; type=string; label=Title format week: Default - d. MMM[ yyyy]{ '&#8212,' d. [ MMM] yyyy};
 titleFormat.week = d. MMM[ yyyy]{ '&#8212;' d. [ MMM] yyyy}
 
-# cat=megooglecalendar/general/titleformat/3; type=string; label=Title format day: Default - dddd, d. MMM, yyyy;
+# cat=plugin.megooglecalendar/content/160; type=string; label=Title format day: Default - dddd, d. MMM, yyyy;
 titleFormat.day = dddd, d. MMM, yyyy
 
-# cat=megooglecalendar/general/columnformat/1; type=string; label=Column format month: Default - ddd;
+# cat=plugin.megooglecalendar/content/170; type=string; label=Column format month: Default - ddd;
 columnFormat.month = ddd
 
-# cat=megooglecalendar/general/columnformat/2; type=string; label=Column format week: Default - ddd dd.MM;
+# cat=plugin.megooglecalendar/content/180; type=string; label=Column format week: Default - ddd dd.MM;
 columnFormat.week = ddd dd.MM
 
-# cat=megooglecalendar/general/columnformat/3; type=string; label=Column format day: Default - dddd dd.MM;
+# cat=plugin.megooglecalendar/content/190; type=string; label=Column format day: Default - dddd dd.MM;
 columnFormat.day = dddd dd.MM
 
-# cat=megooglecalendar/general/timeformat/1; type=string; label=Time format agenda: Default - HH:mm{ - HH:mm};
+# cat=plugin.megooglecalendar/content/200; type=string; label=Time format agenda: Default - HH:mm{ - HH:mm};
 timeFormat.agenda = HH:mm{ - HH:mm}
 
-# cat=megooglecalendar/general/timeformat/2; type=string; label=Time format general: Default - HH:mm;
+# cat=plugin.megooglecalendar/content/210; type=string; label=Time format general: Default - HH:mm;
 timeFormat.general = HH:mm
 
-# cat=megooglecalendar/general/timeformat/3; type=string; label=Axis format: Default - HH:mm;
+# cat=plugin.megooglecalendar/content/220; type=string; label=Axis format: Default - HH:mm;
 timeFormat.axis = HH:mm
+
+# cat=plugin.megooglecalendar/content/230; type=boolean; label=Do not generate link to google maps: Default - 0;
+noGoogleMapsLink = 0
+
+# cat=plugin.megooglecalendar/content/240; type=boolean; label=Hide ical download button in event details: Default - 0;
+hideIcalDownloadButton = 0
+
+# cat=plugin.megooglecalendar/content/250; type=boolean; label=Hide add to google calendar button: Default - 0;
+hideAddtoGoogleCalendarButton = 0
 
 }
