@@ -1,0 +1,989 @@
+# # Include Main JS
+temp.megooglecalendar = COA 
+temp.megooglecalendar.wrap = <script type="text/javascript">/*<![CDATA[*/|/*]]>*/</script>
+
+temp.megooglecalendar.5 = TEXT
+temp.megooglecalendar.5.value = $(document).ready(function(){ 
+
+temp.megooglecalendar.10 = TEXT
+temp.megooglecalendar.10.value = $("#calendar").fullCalendar({
+
+temp.megooglecalendar.15 = TEXT
+temp.megooglecalendar.15.value = theme: true,
+temp.megooglecalendar.15.if.isTrue = {$plugin.megooglecalendar.cssThemePath}
+
+# # Include custom gcalFeed
+temp.megooglecalendar.20 = TEXT
+temp.megooglecalendar.20.value = events: $.fullCalendar.gcalFeed("{$plugin.megooglecalendar.gcalFeed}",
+temp.megooglecalendar.20.insertData = 1
+temp.megooglecalendar.20.stdWrap.dataWrap = |
+
+temp.megooglecalendar.21 = COA
+temp.megooglecalendar.21.wrap = {|}),
+
+temp.megooglecalendar.21.1 = TEXT
+temp.megooglecalendar.21.1.value = className: 'gcal-events',
+temp.megooglecalendar.25.1.if.isFalse = {$plugin.megooglecalendar.className}
+
+temp.megooglecalendar.21.2 = TEXT
+temp.megooglecalendar.21.2.value = className: '{$plugin.megooglecalendar.className}',
+temp.megooglecalendar.21.2.insertData = 1
+temp.megooglecalendar.21.2.stdWrap.dataWrap = |
+temp.megooglecalendar.21.2.if.isTrue = {$plugin.megooglecalendar.className}
+
+temp.megooglecalendar.21.3 = TEXT
+temp.megooglecalendar.21.3.value = currentTimezone: 'Europe/Berlin'
+temp.megooglecalendar.21.3.if.isFalse = {$plugin.megooglecalendar.currentTimezone}
+
+temp.megooglecalendar.21.4 = TEXT
+temp.megooglecalendar.21.4.value = currentTimezone: '{$plugin.megooglecalendar.currentTimezone}',
+temp.megooglecalendar.21.4.insertData = 1
+temp.megooglecalendar.21.4.stdWrap.dataWrap = |
+temp.megooglecalendar.21.4.if.isTrue = {$plugin.megooglecalendar.currentTimezone}
+
+
+temp.megooglecalendar.25 = COA
+temp.megooglecalendar.25.wrap = header: {|},
+
+temp.megooglecalendar.25.1 = TEXT
+temp.megooglecalendar.25.1.value = left: 'prev,next today',
+temp.megooglecalendar.25.1.insertData = 1
+temp.megooglecalendar.25.1.stdWrap.dataWrap = |
+temp.megooglecalendar.25.1.if.isFalse = {$plugin.megooglecalendar.headerLeft}
+
+temp.megooglecalendar.25.2 = TEXT
+temp.megooglecalendar.25.2.value = left: '{$plugin.megooglecalendar.headerLeft}',
+temp.megooglecalendar.25.2.insertData = 1
+temp.megooglecalendar.25.2.stdWrap.dataWrap = |
+temp.megooglecalendar.25.2.if.isTrue = {$plugin.megooglecalendar.headerLeft}
+
+temp.megooglecalendar.25.3 = TEXT
+temp.megooglecalendar.25.3.value = center: 'title',
+temp.megooglecalendar.25.3.insertData = 1
+temp.megooglecalendar.25.3.stdWrap.dataWrap = |
+temp.megooglecalendar.25.3.if.isFalse = {$plugin.megooglecalendar.headerCenter}
+
+temp.megooglecalendar.25.4 = TEXT
+temp.megooglecalendar.25.4.value = center: '{$plugin.megooglecalendar.headerCenter}',
+temp.megooglecalendar.25.4.insertData = 1
+temp.megooglecalendar.25.4.stdWrap.dataWrap = |
+temp.megooglecalendar.25.4.if.isTrue = {$plugin.megooglecalendar.headerCenter}
+
+temp.megooglecalendar.25.5 = TEXT
+temp.megooglecalendar.25.5.value = right: 'month,agendaWeek,agendaDay',
+temp.megooglecalendar.25.5.insertData = 1
+temp.megooglecalendar.25.5.stdWrap.dataWrap = |
+temp.megooglecalendar.25.5.if.isFalse = {$plugin.megooglecalendar.headerRight}
+
+temp.megooglecalendar.25.6 = TEXT
+temp.megooglecalendar.25.6.value = right: '{$plugin.megooglecalendar.headerRight}'
+temp.megooglecalendar.25.6.insertData = 1
+temp.megooglecalendar.25.6.stdWrap.dataWrap = |
+temp.megooglecalendar.25.6.if.isTrue = {$plugin.megooglecalendar.headerRight}
+
+temp.megooglecalendar.30 = COA
+temp.megooglecalendar.30.1 = TEXT
+temp.megooglecalendar.30.1.value = weekMode: 'fixed',
+temp.megooglecalendar.30.1.insertData = 1
+temp.megooglecalendar.30.1.stdWrap.dataWrap = |
+temp.megooglecalendar.30.1.if.isFalse = {$plugin.megooglecalendar.weekMode}
+
+temp.megooglecalendar.30.2 = TEXT
+temp.megooglecalendar.30.2.value = weekMode: '{$plugin.megooglecalendar.weekMode}',
+temp.megooglecalendar.30.2.insertData = 1
+temp.megooglecalendar.30.2.stdWrap.dataWrap = |
+temp.megooglecalendar.30.2.if.isTrue = {$plugin.megooglecalendar.weekMode}
+
+temp.megooglecalendar.32 = TEXT
+temp.megooglecalendar.32.value = defaultView: 'agendaWeek',
+temp.megooglecalendar.32.insertData = 1
+temp.megooglecalendar.32.stdWrap.dataWrap = |
+temp.megooglecalendar.32.if.isFalse = {$plugin.megooglecalendar.defaultView}
+
+temp.megooglecalendar.33 = TEXT
+temp.megooglecalendar.33.value = defaultView: '{$plugin.megooglecalendar.defaultView}',
+temp.megooglecalendar.33.insertData = 1
+temp.megooglecalendar.33.stdWrap.dataWrap = |
+temp.megooglecalendar.33.if.isTrue = {$plugin.megooglecalendar.defaultView}
+
+temp.megooglecalendar.34 = TEXT
+temp.megooglecalendar.34.value = weekends: false,
+temp.megooglecalendar.34.insertData = 1
+temp.megooglecalendar.34.stdWrap.dataWrap = |
+temp.megooglecalendar.34.if.isFalse = {$plugin.megooglecalendar.weekends}
+
+temp.megooglecalendar.35 = TEXT
+temp.megooglecalendar.35.value = weekends: true,
+temp.megooglecalendar.35.insertData = 1
+temp.megooglecalendar.35.stdWrap.dataWrap = |
+temp.megooglecalendar.35.if.isTrue = {$plugin.megooglecalendar.weekends}
+
+temp.megooglecalendar.36 = TEXT
+temp.megooglecalendar.36.value = allDaySlot: false,
+temp.megooglecalendar.36.insertData = 1
+temp.megooglecalendar.36.stdWrap.dataWrap = |
+temp.megooglecalendar.36.if.isFalse = {$plugin.megooglecalendar.allDaySlot}
+
+temp.megooglecalendar.37 = TEXT
+temp.megooglecalendar.37.value = allDaySlot: true,
+temp.megooglecalendar.37.insertData = 1
+temp.megooglecalendar.37.stdWrap.dataWrap = |
+temp.megooglecalendar.37.if.isTrue = {$plugin.megooglecalendar.allDaySlot}
+
+temp.megooglecalendar.38 = TEXT
+temp.megooglecalendar.38.value = minTime: 0,
+temp.megooglecalendar.38.insertData = 1
+temp.megooglecalendar.38.stdWrap.dataWrap = |
+temp.megooglecalendar.38.if.isFalse = {$plugin.megooglecalendar.minTime}
+
+temp.megooglecalendar.39 = TEXT
+temp.megooglecalendar.39.value = minTime: {$plugin.megooglecalendar.minTime},
+temp.megooglecalendar.39.insertData = 1
+temp.megooglecalendar.39.stdWrap.dataWrap = |
+temp.megooglecalendar.39.if.isTrue = {$plugin.megooglecalendar.minTime}
+
+temp.megooglecalendar.40 = TEXT
+temp.megooglecalendar.40.value = maxTime: 24,
+temp.megooglecalendar.40.insertData = 1
+temp.megooglecalendar.40.stdWrap.dataWrap = |
+temp.megooglecalendar.40.if.isFalse = {$plugin.megooglecalendar.maxTime}
+
+temp.megooglecalendar.41 = TEXT
+temp.megooglecalendar.41.value = maxTime: {$plugin.megooglecalendar.maxTime},
+temp.megooglecalendar.41.insertData = 1
+temp.megooglecalendar.41.stdWrap.dataWrap = |
+temp.megooglecalendar.41.if.isTrue = {$plugin.megooglecalendar.maxTime}
+
+temp.megooglecalendar.42 = TEXT
+temp.megooglecalendar.42.value = firstDay: 0,
+temp.megooglecalendar.42.insertData = 1
+temp.megooglecalendar.42.stdWrap.dataWrap = |
+temp.megooglecalendar.42.if.isFalse = {$plugin.megooglecalendar.firstDay}
+
+temp.megooglecalendar.43 = TEXT
+temp.megooglecalendar.43.value = firstDay: {$plugin.megooglecalendar.firstDay},
+temp.megooglecalendar.43.insertData = 1
+temp.megooglecalendar.43.stdWrap.dataWrap = |
+temp.megooglecalendar.43.if.isTrue = {$plugin.megooglecalendar.firstDay}
+
+
+temp.megooglecalendar.44 = COA
+temp.megooglecalendar.44.wrap = titleFormat: {|},
+
+
+temp.megooglecalendar.44.1 = TEXT
+temp.megooglecalendar.44.1.value = month: "MMMM yyyy",
+temp.megooglecalendar.44.1.insertData = 1
+temp.megooglecalendar.44.1.stdWrap.dataWrap = |
+temp.megooglecalendar.44.1.if.isFalse = {$plugin.megooglecalendar.titleFormat.month}
+
+temp.megooglecalendar.44.2 = TEXT
+temp.megooglecalendar.44.2.value = month: "{$plugin.megooglecalendar.titleFormat.month}",
+temp.megooglecalendar.44.2.insertData = 1
+temp.megooglecalendar.44.2.stdWrap.dataWrap = |
+temp.megooglecalendar.44.2.if.isTrue = {$plugin.megooglecalendar.titleFormat.month}
+
+temp.megooglecalendar.44.3 = TEXT
+temp.megooglecalendar.44.3.value = week: "d. MMM[ yyyy]{ '&#8212;' d. [ MMM] yyyy}",
+temp.megooglecalendar.44.3.insertData = 1
+temp.megooglecalendar.44.3.stdWrap.dataWrap = |
+temp.megooglecalendar.44.3.if.isFalse = {$plugin.megooglecalendar.titleFormat.week}
+
+temp.megooglecalendar.44.4 = TEXT
+temp.megooglecalendar.44.4.value = week: "{$plugin.megooglecalendar.titleFormat.week}",
+temp.megooglecalendar.44.4.insertData = 1
+temp.megooglecalendar.44.4.stdWrap.dataWrap = |
+temp.megooglecalendar.44.4.if.isTrue = {$plugin.megooglecalendar.titleFormat.week}
+
+temp.megooglecalendar.44.5 = TEXT
+temp.megooglecalendar.44.5.value = day: "dddd, d. MMM, yyyy"
+temp.megooglecalendar.44.5.insertData = 1
+temp.megooglecalendar.44.5.stdWrap.dataWrap = |
+temp.megooglecalendar.44.5.if.isFalse = {$plugin.megooglecalendar.titleFormat.day}
+
+temp.megooglecalendar.44.6 = TEXT
+temp.megooglecalendar.44.6.value = day: "{$plugin.megooglecalendar.titleFormat.day}"
+temp.megooglecalendar.44.6.insertData = 1
+temp.megooglecalendar.44.6.stdWrap.dataWrap = |
+temp.megooglecalendar.44.6.if.isTrue = {$plugin.megooglecalendar.titleFormat.day}
+
+
+temp.megooglecalendar.45 = COA
+temp.megooglecalendar.45.wrap = columnFormat: {|},
+
+temp.megooglecalendar.45.1 = TEXT
+temp.megooglecalendar.45.1.value = month: "ddd",
+temp.megooglecalendar.45.1.insertData = 1
+temp.megooglecalendar.45.1.stdWrap.dataWrap = |
+temp.megooglecalendar.45.1.if.isFalse = {$plugin.megooglecalendar.columnFormat.month}
+
+temp.megooglecalendar.45.2 = TEXT
+temp.megooglecalendar.45.2.value = month: "{$plugin.megooglecalendar.columnFormat.month}",
+temp.megooglecalendar.45.2.insertData = 1
+temp.megooglecalendar.45.2.stdWrap.dataWrap = |
+temp.megooglecalendar.45.2.if.isTrue = {$plugin.megooglecalendar.columnFormat.month}
+
+temp.megooglecalendar.45.3 = TEXT
+temp.megooglecalendar.45.3.value = week: "ddd dd.MM",
+temp.megooglecalendar.45.3.insertData = 1
+temp.megooglecalendar.45.3.stdWrap.dataWrap = |
+temp.megooglecalendar.45.3.if.isFalse = {$plugin.megooglecalendar.columnFormat.week}
+
+temp.megooglecalendar.45.4 = TEXT
+temp.megooglecalendar.45.4.value = week: "{$plugin.megooglecalendar.columnFormat.week}",
+temp.megooglecalendar.45.4.insertData = 1
+temp.megooglecalendar.45.4.stdWrap.dataWrap = |
+temp.megooglecalendar.45.4.if.isTrue = {$plugin.megooglecalendar.columnFormat.week}
+
+temp.megooglecalendar.45.5 = TEXT
+temp.megooglecalendar.45.5.value = day: "dddd dd.MM"
+temp.megooglecalendar.45.5.insertData = 1
+temp.megooglecalendar.45.5.stdWrap.dataWrap = |
+temp.megooglecalendar.45.5.if.isFalse = {$plugin.megooglecalendar.columnFormat.day}
+
+temp.megooglecalendar.45.6 = TEXT
+temp.megooglecalendar.45.6.value = day: "{$plugin.megooglecalendar.columnFormat.day}"
+temp.megooglecalendar.45.6.insertData = 1
+temp.megooglecalendar.45.6.stdWrap.dataWrap = |
+temp.megooglecalendar.45.6.if.isTrue = {$plugin.megooglecalendar.columnFormat.day}
+
+temp.megooglecalendar.46 = COA
+temp.megooglecalendar.46.wrap = timeFormat: {|},
+
+temp.megooglecalendar.46.1 = TEXT
+temp.megooglecalendar.46.1.value = agenda: "HH:mm{ - HH:mm}",
+temp.megooglecalendar.46.1.insertData = 1
+temp.megooglecalendar.46.1.stdWrap.dataWrap = |
+temp.megooglecalendar.46.1.if.isFalse = {$plugin.megooglecalendar.timeFormat.agenda}
+
+temp.megooglecalendar.46.2 = TEXT
+temp.megooglecalendar.46.2.value = agenda: "{$plugin.megooglecalendar.timeFormat.agenda}",
+temp.megooglecalendar.46.2.insertData = 1
+temp.megooglecalendar.46.2.stdWrap.dataWrap = |
+temp.megooglecalendar.46.2.if.isTrue = {$plugin.megooglecalendar.timeFormat.agenda}
+
+temp.megooglecalendar.46.3 = TEXT
+temp.megooglecalendar.46.3.value = '': "HH:mm"
+temp.megooglecalendar.46.3.insertData = 1
+temp.megooglecalendar.46.3.stdWrap.dataWrap = |
+temp.megooglecalendar.46.3.if.isFalse = {$plugin.megooglecalendar.timeFormat.general}
+
+temp.megooglecalendar.46.4 = TEXT
+temp.megooglecalendar.46.4.value = '': "{$plugin.megooglecalendar.timeFormat.general}"
+temp.megooglecalendar.46.4.insertData = 1
+temp.megooglecalendar.46.4.stdWrap.dataWrap = |
+temp.megooglecalendar.46.4.if.isTrue = {$plugin.megooglecalendar.timeFormat.general}
+
+temp.megooglecalendar.47 = TEXT
+temp.megooglecalendar.47.value = axisFormat: "HH:mm"
+temp.megooglecalendar.47.insertData = 1
+temp.megooglecalendar.47.stdWrap.dataWrap = |
+temp.megooglecalendar.47.if.isFalse = {$plugin.megooglecalendar.axisFormat}
+
+temp.megooglecalendar.48 = TEXT
+temp.megooglecalendar.48.value = axisFormat: "{$plugin.megooglecalendar.axisFormat}",
+temp.megooglecalendar.48.insertData = 1
+temp.megooglecalendar.48.stdWrap.dataWrap = |
+temp.megooglecalendar.48.if.isTrue = {$plugin.megooglecalendar.axisFormat}
+
+temp.megooglecalendar.50 = COA
+temp.megooglecalendar.50.wrap = monthNames: [|],
+
+temp.megooglecalendar.50.1 = TEXT
+temp.megooglecalendar.50.1.value = {LLL:EXT:me_google_calendar/locallang.xml:january}
+temp.megooglecalendar.50.1.wrap = '|',
+temp.megooglecalendar.50.1.insertData = 1
+temp.megooglecalendar.50.1.stdWrap.dataWrap = |
+temp.megooglecalendar.50.1.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.2 = TEXT
+temp.megooglecalendar.50.2.value = {LLL:{$plugin.megooglecalendar.lllPath}:january}
+temp.megooglecalendar.50.2.wrap = '|',
+temp.megooglecalendar.50.2.insertData = 1
+temp.megooglecalendar.50.2.stdWrap.dataWrap = |
+temp.megooglecalendar.50.2.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.3 = TEXT
+temp.megooglecalendar.50.3.value = {LLL:EXT:me_google_calendar/locallang.xml:february}
+temp.megooglecalendar.50.3.wrap = '|',
+temp.megooglecalendar.50.3.insertData = 1
+temp.megooglecalendar.50.3.stdWrap.dataWrap = |
+temp.megooglecalendar.50.3.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.4 = TEXT
+temp.megooglecalendar.50.4.value = {LLL:{$plugin.megooglecalendar.lllPath}:february}
+temp.megooglecalendar.50.4.wrap = '|',
+temp.megooglecalendar.50.4.insertData = 1
+temp.megooglecalendar.50.4.stdWrap.dataWrap = |
+temp.megooglecalendar.50.4.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.5 = TEXT
+temp.megooglecalendar.50.5.value = {LLL:EXT:me_google_calendar/locallang.xml:march}
+temp.megooglecalendar.50.5.wrap = '|',
+temp.megooglecalendar.50.5.insertData = 1
+temp.megooglecalendar.50.5.stdWrap.dataWrap = |
+temp.megooglecalendar.50.5.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.6 = TEXT
+temp.megooglecalendar.50.6.value = {LLL:{$plugin.megooglecalendar.lllPath}:march}
+temp.megooglecalendar.50.6.wrap = '|',
+temp.megooglecalendar.50.6.insertData = 1
+temp.megooglecalendar.50.6.stdWrap.dataWrap = |
+temp.megooglecalendar.50.6.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.7 = TEXT
+temp.megooglecalendar.50.7.value = {LLL:EXT:me_google_calendar/locallang.xml:april}
+temp.megooglecalendar.50.7.wrap = '|',
+temp.megooglecalendar.50.7.insertData = 1
+temp.megooglecalendar.50.7.stdWrap.dataWrap = |
+temp.megooglecalendar.50.7.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.8 = TEXT
+temp.megooglecalendar.50.8.value = {LLL:{$plugin.megooglecalendar.lllPath}:april}
+temp.megooglecalendar.50.8.wrap = '|',
+temp.megooglecalendar.50.8.insertData = 1
+temp.megooglecalendar.50.8.stdWrap.dataWrap = |
+temp.megooglecalendar.50.8.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.9 = TEXT
+temp.megooglecalendar.50.9.value = {LLL:EXT:me_google_calendar/locallang.xml:may}
+temp.megooglecalendar.50.9.wrap = '|',
+temp.megooglecalendar.50.9.insertData = 1
+temp.megooglecalendar.50.9.stdWrap.dataWrap = |
+temp.megooglecalendar.50.9.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.10 = TEXT
+temp.megooglecalendar.50.10.value = {LLL:{$plugin.megooglecalendar.lllPath}:may}
+temp.megooglecalendar.50.10.wrap = '|',
+temp.megooglecalendar.50.10.insertData = 1
+temp.megooglecalendar.50.10.stdWrap.dataWrap = |
+temp.megooglecalendar.50.10.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.11 = TEXT
+temp.megooglecalendar.50.11.value = {LLL:EXT:me_google_calendar/locallang.xml:june}
+temp.megooglecalendar.50.11.wrap = '|',
+temp.megooglecalendar.50.11.insertData = 1
+temp.megooglecalendar.50.11.stdWrap.dataWrap = |
+temp.megooglecalendar.50.11.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.12 = TEXT
+temp.megooglecalendar.50.12.value = {LLL:{$plugin.megooglecalendar.lllPath}:june}
+temp.megooglecalendar.50.12.wrap = '|',
+temp.megooglecalendar.50.12.insertData = 1
+temp.megooglecalendar.50.12.stdWrap.dataWrap = |
+temp.megooglecalendar.50.12.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.13 = TEXT
+temp.megooglecalendar.50.13.value = {LLL:EXT:me_google_calendar/locallang.xml:july}
+temp.megooglecalendar.50.13.wrap = '|',
+temp.megooglecalendar.50.13.insertData = 1
+temp.megooglecalendar.50.13.stdWrap.dataWrap = |
+temp.megooglecalendar.50.13.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.14 = TEXT
+temp.megooglecalendar.50.14.value = {LLL:{$plugin.megooglecalendar.lllPath}:july}
+temp.megooglecalendar.50.14.wrap = '|',
+temp.megooglecalendar.50.14.insertData = 1
+temp.megooglecalendar.50.14.stdWrap.dataWrap = |
+temp.megooglecalendar.50.14.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.15 = TEXT
+temp.megooglecalendar.50.15.value = {LLL:EXT:me_google_calendar/locallang.xml:august}
+temp.megooglecalendar.50.15.wrap = '|',
+temp.megooglecalendar.50.15.insertData = 1
+temp.megooglecalendar.50.15.stdWrap.dataWrap = |
+temp.megooglecalendar.50.15.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.16 = TEXT
+temp.megooglecalendar.50.16.value = {LLL:{$plugin.megooglecalendar.lllPath}:august}
+temp.megooglecalendar.50.16.wrap = '|',
+temp.megooglecalendar.50.16.insertData = 1
+temp.megooglecalendar.50.16.stdWrap.dataWrap = |
+temp.megooglecalendar.50.16.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.17 = TEXT
+temp.megooglecalendar.50.17.value = {LLL:EXT:me_google_calendar/locallang.xml:september}
+temp.megooglecalendar.50.17.wrap = '|',
+temp.megooglecalendar.50.17.insertData = 1
+temp.megooglecalendar.50.17.stdWrap.dataWrap = |
+temp.megooglecalendar.50.17.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.18 = TEXT
+temp.megooglecalendar.50.18.value = {LLL:{$plugin.megooglecalendar.lllPath}:september}
+temp.megooglecalendar.50.18.wrap = '|',
+temp.megooglecalendar.50.18.insertData = 1
+temp.megooglecalendar.50.18.stdWrap.dataWrap = |
+temp.megooglecalendar.50.18.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.19 = TEXT
+temp.megooglecalendar.50.19.value = {LLL:EXT:me_google_calendar/locallang.xml:october}
+temp.megooglecalendar.50.19.wrap = '|',
+temp.megooglecalendar.50.19.insertData = 1
+temp.megooglecalendar.50.19.stdWrap.dataWrap = |
+temp.megooglecalendar.50.19.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.20 = TEXT
+temp.megooglecalendar.50.20.value = {LLL:{$plugin.megooglecalendar.lllPath}:october}
+temp.megooglecalendar.50.20.wrap = '|',
+temp.megooglecalendar.50.20.insertData = 1
+temp.megooglecalendar.50.20.stdWrap.dataWrap = |
+temp.megooglecalendar.50.20.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.21 = TEXT
+temp.megooglecalendar.50.21.value = {LLL:EXT:me_google_calendar/locallang.xml:november}
+temp.megooglecalendar.50.21.wrap = '|',
+temp.megooglecalendar.50.21.insertData = 1
+temp.megooglecalendar.50.21.stdWrap.dataWrap = |
+temp.megooglecalendar.50.21.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.22 = TEXT
+temp.megooglecalendar.50.22.value = {LLL:{$plugin.megooglecalendar.lllPath}:november}
+temp.megooglecalendar.50.22.wrap = '|',
+temp.megooglecalendar.50.22.insertData = 1
+temp.megooglecalendar.50.22.stdWrap.dataWrap = |
+temp.megooglecalendar.50.22.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.23 = TEXT
+temp.megooglecalendar.50.23.value = {LLL:EXT:me_google_calendar/locallang.xml:december}
+temp.megooglecalendar.50.23.wrap = '|',
+temp.megooglecalendar.50.23.insertData = 1
+temp.megooglecalendar.50.23.stdWrap.dataWrap = |
+temp.megooglecalendar.50.23.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.50.24 = TEXT
+temp.megooglecalendar.50.24.value = {LLL:{$plugin.megooglecalendar.lllPath}:december}
+temp.megooglecalendar.50.24.wrap = '|',
+temp.megooglecalendar.50.24.insertData = 1
+temp.megooglecalendar.50.24.stdWrap.dataWrap = |
+temp.megooglecalendar.50.24.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+
+temp.megooglecalendar.60 = COA
+temp.megooglecalendar.60.wrap = monthNamesShort: [|],
+
+temp.megooglecalendar.60.1 = TEXT
+temp.megooglecalendar.60.1.value = {LLL:EXT:me_google_calendar/locallang.xml:jan}
+temp.megooglecalendar.60.1.wrap = '|',
+temp.megooglecalendar.60.1.insertData = 1
+temp.megooglecalendar.60.1.stdWrap.dataWrap = |
+temp.megooglecalendar.60.1.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.2 = TEXT
+temp.megooglecalendar.60.2.value = {LLL:{$plugin.megooglecalendar.lllPath}:jan}
+temp.megooglecalendar.60.2.wrap = '|',
+temp.megooglecalendar.60.2.insertData = 1
+temp.megooglecalendar.60.2.stdWrap.dataWrap = |
+temp.megooglecalendar.60.2.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.3 = TEXT
+temp.megooglecalendar.60.3.value = {LLL:EXT:me_google_calendar/locallang.xml:feb}
+temp.megooglecalendar.60.3.wrap = '|',
+temp.megooglecalendar.60.3.insertData = 1
+temp.megooglecalendar.60.3.stdWrap.dataWrap = |
+temp.megooglecalendar.60.3.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.4 = TEXT
+temp.megooglecalendar.60.4.value = {LLL:{$plugin.megooglecalendar.lllPath}:feb}
+temp.megooglecalendar.60.4.wrap = '|',
+temp.megooglecalendar.60.4.insertData = 1
+temp.megooglecalendar.60.4.stdWrap.dataWrap = |
+temp.megooglecalendar.60.4.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.5 = TEXT
+temp.megooglecalendar.60.5.value = {LLL:EXT:me_google_calendar/locallang.xml:mar}
+temp.megooglecalendar.60.5.wrap = '|',
+temp.megooglecalendar.60.5.insertData = 1
+temp.megooglecalendar.60.5.stdWrap.dataWrap = |
+temp.megooglecalendar.60.5.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.6 = TEXT
+temp.megooglecalendar.60.6.value = {LLL:{$plugin.megooglecalendar.lllPath}:mar}
+temp.megooglecalendar.60.6.wrap = '|',
+temp.megooglecalendar.60.6.insertData = 1
+temp.megooglecalendar.60.6.stdWrap.dataWrap = |
+temp.megooglecalendar.60.6.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.7 = TEXT
+temp.megooglecalendar.60.7.value = {LLL:EXT:me_google_calendar/locallang.xml:apr}
+temp.megooglecalendar.60.7.wrap = '|',
+temp.megooglecalendar.60.7.insertData = 1
+temp.megooglecalendar.60.7.stdWrap.dataWrap = |
+temp.megooglecalendar.60.7.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.8 = TEXT
+temp.megooglecalendar.60.8.value = {LLL:{$plugin.megooglecalendar.lllPath}:apr}
+temp.megooglecalendar.60.8.wrap = '|',
+temp.megooglecalendar.60.8.insertData = 1
+temp.megooglecalendar.60.8.stdWrap.dataWrap = |
+temp.megooglecalendar.60.8.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.9 = TEXT
+temp.megooglecalendar.60.9.value = {LLL:EXT:me_google_calendar/locallang.xml:may_short}
+temp.megooglecalendar.60.9.wrap = '|',
+temp.megooglecalendar.60.9.insertData = 1
+temp.megooglecalendar.60.9.stdWrap.dataWrap = |
+temp.megooglecalendar.60.9.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.10 = TEXT
+temp.megooglecalendar.60.10.value = {LLL:{$plugin.megooglecalendar.lllPath}:may_short}
+temp.megooglecalendar.60.10.wrap = '|',
+temp.megooglecalendar.60.10.insertData = 1
+temp.megooglecalendar.60.10.stdWrap.dataWrap = |
+temp.megooglecalendar.60.10.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.11 = TEXT
+temp.megooglecalendar.60.11.value = {LLL:EXT:me_google_calendar/locallang.xml:jun}
+temp.megooglecalendar.60.11.wrap = '|',
+temp.megooglecalendar.60.11.insertData = 1
+temp.megooglecalendar.60.11.stdWrap.dataWrap = |
+temp.megooglecalendar.60.11.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.12 = TEXT
+temp.megooglecalendar.60.12.value = {LLL:{$plugin.megooglecalendar.lllPath}:jun}
+temp.megooglecalendar.60.12.wrap = '|',
+temp.megooglecalendar.60.12.insertData = 1
+temp.megooglecalendar.60.12.stdWrap.dataWrap = |
+temp.megooglecalendar.60.12.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.13 = TEXT
+temp.megooglecalendar.60.13.value = {LLL:EXT:me_google_calendar/locallang.xml:jul}
+temp.megooglecalendar.60.13.wrap = '|',
+temp.megooglecalendar.60.13.insertData = 1
+temp.megooglecalendar.60.13.stdWrap.dataWrap = |
+temp.megooglecalendar.60.13.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.14 = TEXT
+temp.megooglecalendar.60.14.value = {LLL:{$plugin.megooglecalendar.lllPath}:jul}
+temp.megooglecalendar.60.14.wrap = '|',
+temp.megooglecalendar.60.14.insertData = 1
+temp.megooglecalendar.60.14.stdWrap.dataWrap = |
+temp.megooglecalendar.60.14.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.15 = TEXT
+temp.megooglecalendar.60.15.value = {LLL:EXT:me_google_calendar/locallang.xml:aug}
+temp.megooglecalendar.60.15.wrap = '|',
+temp.megooglecalendar.60.15.insertData = 1
+temp.megooglecalendar.60.15.stdWrap.dataWrap = |
+temp.megooglecalendar.60.15.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.16 = TEXT
+temp.megooglecalendar.60.16.value = {LLL:{$plugin.megooglecalendar.lllPath}:aug}
+temp.megooglecalendar.60.16.wrap = '|',
+temp.megooglecalendar.60.16.insertData = 1
+temp.megooglecalendar.60.16.stdWrap.dataWrap = |
+temp.megooglecalendar.60.16.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.17 = TEXT
+temp.megooglecalendar.60.17.value = {LLL:EXT:me_google_calendar/locallang.xml:sep}
+temp.megooglecalendar.60.17.wrap = '|',
+temp.megooglecalendar.60.17.insertData = 1
+temp.megooglecalendar.60.17.stdWrap.dataWrap = |
+temp.megooglecalendar.60.17.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.18 = TEXT
+temp.megooglecalendar.60.18.value = {LLL:{$plugin.megooglecalendar.lllPath}:sep}
+temp.megooglecalendar.60.18.wrap = '|',
+temp.megooglecalendar.60.18.insertData = 1
+temp.megooglecalendar.60.18.stdWrap.dataWrap = |
+temp.megooglecalendar.60.18.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.19 = TEXT
+temp.megooglecalendar.60.19.value = {LLL:EXT:me_google_calendar/locallang.xml:oct}
+temp.megooglecalendar.60.19.wrap = '|',
+temp.megooglecalendar.60.19.insertData = 1
+temp.megooglecalendar.60.19.stdWrap.dataWrap = |
+temp.megooglecalendar.60.19.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.20 = TEXT
+temp.megooglecalendar.60.20.value = {LLL:{$plugin.megooglecalendar.lllPath}:oct}
+temp.megooglecalendar.60.20.wrap = '|',
+temp.megooglecalendar.60.20.insertData = 1
+temp.megooglecalendar.60.20.stdWrap.dataWrap = |
+temp.megooglecalendar.60.20.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.21 = TEXT
+temp.megooglecalendar.60.21.value = {LLL:EXT:me_google_calendar/locallang.xml:nov}
+temp.megooglecalendar.60.21.wrap = '|',
+temp.megooglecalendar.60.21.insertData = 1
+temp.megooglecalendar.60.21.stdWrap.dataWrap = |
+temp.megooglecalendar.60.21.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.22 = TEXT
+temp.megooglecalendar.60.22.value = {LLL:{$plugin.megooglecalendar.lllPath}:nov}
+temp.megooglecalendar.60.22.wrap = '|',
+temp.megooglecalendar.60.22.insertData = 1
+temp.megooglecalendar.60.22.stdWrap.dataWrap = |
+temp.megooglecalendar.60.22.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.23 = TEXT
+temp.megooglecalendar.60.23.value = {LLL:EXT:me_google_calendar/locallang.xml:dec}
+temp.megooglecalendar.60.23.wrap = '|',
+temp.megooglecalendar.60.23.insertData = 1
+temp.megooglecalendar.60.23.stdWrap.dataWrap = |
+temp.megooglecalendar.60.23.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.60.24 = TEXT
+temp.megooglecalendar.60.24.value = {LLL:{$plugin.megooglecalendar.lllPath}:dec}
+temp.megooglecalendar.60.24.wrap = '|',
+temp.megooglecalendar.60.24.insertData = 1
+temp.megooglecalendar.60.24.stdWrap.dataWrap = |
+temp.megooglecalendar.60.24.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+
+temp.megooglecalendar.70 = COA
+temp.megooglecalendar.70.wrap = dayNames: [|],
+
+temp.megooglecalendar.70.1 = TEXT
+temp.megooglecalendar.70.1.value = {LLL:EXT:me_google_calendar/locallang.xml:sunday}
+temp.megooglecalendar.70.1.wrap = '|',
+temp.megooglecalendar.70.1.insertData = 1
+temp.megooglecalendar.70.1.stdWrap.dataWrap = |
+temp.megooglecalendar.70.1.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.2 = TEXT
+temp.megooglecalendar.70.2.value = {LLL:{$plugin.megooglecalendar.lllPath}:sunday}
+temp.megooglecalendar.70.2.wrap = '|',
+temp.megooglecalendar.70.2.insertData = 1
+temp.megooglecalendar.70.2.stdWrap.dataWrap = |
+temp.megooglecalendar.70.2.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.3 = TEXT
+temp.megooglecalendar.70.3.value = {LLL:EXT:me_google_calendar/locallang.xml:monday}
+temp.megooglecalendar.70.3.wrap = '|',
+temp.megooglecalendar.70.3.insertData = 1
+temp.megooglecalendar.70.3.stdWrap.dataWrap = |
+temp.megooglecalendar.70.3.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.4 = TEXT
+temp.megooglecalendar.70.4.value = {LLL:{$plugin.megooglecalendar.lllPath}:monday}
+temp.megooglecalendar.70.4.wrap = '|',
+temp.megooglecalendar.70.4.insertData = 1
+temp.megooglecalendar.70.4.stdWrap.dataWrap = |
+temp.megooglecalendar.70.4.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.5 = TEXT
+temp.megooglecalendar.70.5.value = {LLL:EXT:me_google_calendar/locallang.xml:tuesday}
+temp.megooglecalendar.70.5.wrap = '|',
+temp.megooglecalendar.70.5.insertData = 1
+temp.megooglecalendar.70.5.stdWrap.dataWrap = |
+temp.megooglecalendar.70.5.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.6 = TEXT
+temp.megooglecalendar.70.6.value = {LLL:{$plugin.megooglecalendar.lllPath}:tuesday}
+temp.megooglecalendar.70.6.wrap = '|',
+temp.megooglecalendar.70.6.insertData = 1
+temp.megooglecalendar.70.6.stdWrap.dataWrap = |
+temp.megooglecalendar.70.6.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.7 = TEXT
+temp.megooglecalendar.70.7.value = {LLL:EXT:me_google_calendar/locallang.xml:wednesday}
+temp.megooglecalendar.70.7.wrap = '|',
+temp.megooglecalendar.70.7.insertData = 1
+temp.megooglecalendar.70.7.stdWrap.dataWrap = |
+temp.megooglecalendar.70.7.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.8 = TEXT
+temp.megooglecalendar.70.8.value = {LLL:{$plugin.megooglecalendar.lllPath}:wednesday}
+temp.megooglecalendar.70.8.wrap = '|',
+temp.megooglecalendar.70.8.insertData = 1
+temp.megooglecalendar.70.8.stdWrap.dataWrap = |
+temp.megooglecalendar.70.8.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.9 = TEXT
+temp.megooglecalendar.70.9.value = {LLL:EXT:me_google_calendar/locallang.xml:thursday}
+temp.megooglecalendar.70.9.wrap = '|',
+temp.megooglecalendar.70.9.insertData = 1
+temp.megooglecalendar.70.9.stdWrap.dataWrap = |
+temp.megooglecalendar.70.9.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.10 = TEXT
+temp.megooglecalendar.70.10.value = {LLL:{$plugin.megooglecalendar.lllPath}:thursday}
+temp.megooglecalendar.70.10.wrap = '|',
+temp.megooglecalendar.70.10.insertData = 1
+temp.megooglecalendar.70.10.stdWrap.dataWrap = |
+temp.megooglecalendar.70.10.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.11 = TEXT
+temp.megooglecalendar.70.11.value = {LLL:EXT:me_google_calendar/locallang.xml:friday}
+temp.megooglecalendar.70.11.wrap = '|',
+temp.megooglecalendar.70.11.insertData = 1
+temp.megooglecalendar.70.11.stdWrap.dataWrap = |
+temp.megooglecalendar.70.11.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.12 = TEXT
+temp.megooglecalendar.70.12.value = {LLL:{$plugin.megooglecalendar.lllPath}:friday}
+temp.megooglecalendar.70.12.wrap = '|',
+temp.megooglecalendar.70.12.insertData = 1
+temp.megooglecalendar.70.12.stdWrap.dataWrap = |
+temp.megooglecalendar.70.12.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.13 = TEXT
+temp.megooglecalendar.70.13.value = {LLL:EXT:me_google_calendar/locallang.xml:saturday}
+temp.megooglecalendar.70.13.wrap = '|',
+temp.megooglecalendar.70.13.insertData = 1
+temp.megooglecalendar.70.13.stdWrap.dataWrap = |
+temp.megooglecalendar.70.13.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.70.14 = TEXT
+temp.megooglecalendar.70.14.value = {LLL:{$plugin.megooglecalendar.lllPath}:saturday}
+temp.megooglecalendar.70.14.wrap = '|',
+temp.megooglecalendar.70.14.insertData = 1
+temp.megooglecalendar.70.14.stdWrap.dataWrap = |
+temp.megooglecalendar.70.14.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+
+temp.megooglecalendar.80 = COA
+temp.megooglecalendar.80.wrap = dayNamesShort: [|],
+
+temp.megooglecalendar.80.1 = TEXT
+temp.megooglecalendar.80.1.value = {LLL:EXT:me_google_calendar/locallang.xml:sun}
+temp.megooglecalendar.80.1.wrap = '|',
+temp.megooglecalendar.80.1.insertData = 1
+temp.megooglecalendar.80.1.stdWrap.dataWrap = |
+temp.megooglecalendar.80.1.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.2 = TEXT
+temp.megooglecalendar.80.2.value = {LLL:{$plugin.megooglecalendar.lllPath}:sun}
+temp.megooglecalendar.80.2.wrap = '|',
+temp.megooglecalendar.80.2.insertData = 1
+temp.megooglecalendar.80.2.stdWrap.dataWrap = |
+temp.megooglecalendar.80.2.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.3 = TEXT
+temp.megooglecalendar.80.3.value = {LLL:EXT:me_google_calendar/locallang.xml:mon}
+temp.megooglecalendar.80.3.wrap = '|',
+temp.megooglecalendar.80.3.insertData = 1
+temp.megooglecalendar.80.3.stdWrap.dataWrap = |
+temp.megooglecalendar.80.3.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.4 = TEXT
+temp.megooglecalendar.80.4.value = {LLL:{$plugin.megooglecalendar.lllPath}:mon}
+temp.megooglecalendar.80.4.wrap = '|',
+temp.megooglecalendar.80.4.insertData = 1
+temp.megooglecalendar.80.4.stdWrap.dataWrap = |
+temp.megooglecalendar.80.4.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.5 = TEXT
+temp.megooglecalendar.80.5.value = {LLL:EXT:me_google_calendar/locallang.xml:tue}
+temp.megooglecalendar.80.5.wrap = '|',
+temp.megooglecalendar.80.5.insertData = 1
+temp.megooglecalendar.80.5.stdWrap.dataWrap = |
+temp.megooglecalendar.80.5.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.6 = TEXT
+temp.megooglecalendar.80.6.value = {LLL:{$plugin.megooglecalendar.lllPath}:tue}
+temp.megooglecalendar.80.6.wrap = '|',
+temp.megooglecalendar.80.6.insertData = 1
+temp.megooglecalendar.80.6.stdWrap.dataWrap = |
+temp.megooglecalendar.80.6.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.7 = TEXT
+temp.megooglecalendar.80.7.value = {LLL:EXT:me_google_calendar/locallang.xml:wed}
+temp.megooglecalendar.80.7.wrap = '|',
+temp.megooglecalendar.80.7.insertData = 1
+temp.megooglecalendar.80.7.stdWrap.dataWrap = |
+temp.megooglecalendar.80.7.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.8 = TEXT
+temp.megooglecalendar.80.8.value = {LLL:{$plugin.megooglecalendar.lllPath}:wed}
+temp.megooglecalendar.80.8.wrap = '|',
+temp.megooglecalendar.80.8.insertData = 1
+temp.megooglecalendar.80.8.stdWrap.dataWrap = |
+temp.megooglecalendar.80.8.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.9 = TEXT
+temp.megooglecalendar.80.9.value = {LLL:EXT:me_google_calendar/locallang.xml:thu}
+temp.megooglecalendar.80.9.wrap = '|',
+temp.megooglecalendar.80.9.insertData = 1
+temp.megooglecalendar.80.9.stdWrap.dataWrap = |
+temp.megooglecalendar.80.9.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.10 = TEXT
+temp.megooglecalendar.80.10.value = {LLL:{$plugin.megooglecalendar.lllPath}:thu}
+temp.megooglecalendar.80.10.wrap = '|',
+temp.megooglecalendar.80.10.insertData = 1
+temp.megooglecalendar.80.10.stdWrap.dataWrap = |
+temp.megooglecalendar.80.10.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.11 = TEXT
+temp.megooglecalendar.80.11.value = {LLL:EXT:me_google_calendar/locallang.xml:fri}
+temp.megooglecalendar.80.11.wrap = '|',
+temp.megooglecalendar.80.11.insertData = 1
+temp.megooglecalendar.80.11.stdWrap.dataWrap = |
+temp.megooglecalendar.80.11.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.12 = TEXT
+temp.megooglecalendar.80.12.value = {LLL:{$plugin.megooglecalendar.lllPath}:fri}
+temp.megooglecalendar.80.12.wrap = '|',
+temp.megooglecalendar.80.12.insertData = 1
+temp.megooglecalendar.80.12.stdWrap.dataWrap = |
+temp.megooglecalendar.80.12.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.13 = TEXT
+temp.megooglecalendar.80.13.value = {LLL:EXT:me_google_calendar/locallang.xml:sat}
+temp.megooglecalendar.80.13.wrap = '|',
+temp.megooglecalendar.80.13.insertData = 1
+temp.megooglecalendar.80.13.stdWrap.dataWrap = |
+temp.megooglecalendar.80.13.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.80.14 = TEXT
+temp.megooglecalendar.80.14.value = {LLL:{$plugin.megooglecalendar.lllPath}:sat}
+temp.megooglecalendar.80.14.wrap = '|',
+temp.megooglecalendar.80.14.insertData = 1
+temp.megooglecalendar.80.14.stdWrap.dataWrap = |
+temp.megooglecalendar.80.14.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.90 = COA
+temp.megooglecalendar.90.1 = TEXT
+temp.megooglecalendar.90.1.value = {LLL:EXT:me_google_calendar/locallang.xml:alldaytext}
+temp.megooglecalendar.90.1.wrap = allDayText: '|',
+temp.megooglecalendar.90.1.insertData = 1
+temp.megooglecalendar.90.1.stdWrap.dataWrap = |
+temp.megooglecalendar.90.1.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.90.2 = TEXT
+temp.megooglecalendar.90.2.value = {LLL:{$plugin.megooglecalendar.lllPath}:alldaytext}
+temp.megooglecalendar.90.2.wrap = allDayText: '|',
+temp.megooglecalendar.90.2.insertData = 1
+temp.megooglecalendar.90.2.stdWrap.dataWrap = |
+temp.megooglecalendar.90.2.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100 = COA
+temp.megooglecalendar.100.wrap = buttonText: {|},
+
+temp.megooglecalendar.100.1 = TEXT
+temp.megooglecalendar.100.1.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_prev}
+temp.megooglecalendar.100.1.wrap = prev: '|',
+temp.megooglecalendar.100.1.insertData = 1
+temp.megooglecalendar.100.1.stdWrap.dataWrap = |
+temp.megooglecalendar.100.1.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.2 = TEXT
+temp.megooglecalendar.100.2.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_prev}
+temp.megooglecalendar.100.2.wrap = prev: '|',
+temp.megooglecalendar.100.2.insertData = 1
+temp.megooglecalendar.100.2.stdWrap.dataWrap = |
+temp.megooglecalendar.100.2.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.3 = TEXT
+temp.megooglecalendar.100.3.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_next}
+temp.megooglecalendar.100.3.wrap = next: '|',
+temp.megooglecalendar.100.3.insertData = 1
+temp.megooglecalendar.100.3.stdWrap.dataWrap = |
+temp.megooglecalendar.100.3.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.4 = TEXT
+temp.megooglecalendar.100.4.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_next}
+temp.megooglecalendar.100.4.wrap = next: '|',
+temp.megooglecalendar.100.4.insertData = 1
+temp.megooglecalendar.100.4.stdWrap.dataWrap = |
+temp.megooglecalendar.100.4.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.5 = TEXT
+temp.megooglecalendar.100.5.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_prev_year}
+temp.megooglecalendar.100.5.wrap = prevYear: '|',
+temp.megooglecalendar.100.5.insertData = 1
+temp.megooglecalendar.100.5.stdWrap.dataWrap = |
+temp.megooglecalendar.100.5.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.6 = TEXT
+temp.megooglecalendar.100.6.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_prev_year}
+temp.megooglecalendar.100.6.wrap = prevYear:'|',
+temp.megooglecalendar.100.6.insertData = 1
+temp.megooglecalendar.100.6.stdWrap.dataWrap = |
+temp.megooglecalendar.100.6.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.7 = TEXT
+temp.megooglecalendar.100.7.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_next_year}
+temp.megooglecalendar.100.7.wrap = nextYear: '|',
+temp.megooglecalendar.100.7.insertData = 1
+temp.megooglecalendar.100.7.stdWrap.dataWrap = |
+temp.megooglecalendar.100.7.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.8 = TEXT
+temp.megooglecalendar.100.8.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_next_year}
+temp.megooglecalendar.100.8.wrap = nextYear: '|',
+temp.megooglecalendar.100.8.insertData = 1
+temp.megooglecalendar.100.8.stdWrap.dataWrap = |
+temp.megooglecalendar.100.8.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.9 = TEXT
+temp.megooglecalendar.100.9.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_today}
+temp.megooglecalendar.100.9.wrap = today: '|',
+temp.megooglecalendar.100.9.insertData = 1
+temp.megooglecalendar.100.9.stdWrap.dataWrap = |
+temp.megooglecalendar.100.9.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.10 = TEXT
+temp.megooglecalendar.100.10.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_today}
+temp.megooglecalendar.100.10.wrap = today: '|',
+temp.megooglecalendar.100.10.insertData = 1
+temp.megooglecalendar.100.10.stdWrap.dataWrap = |
+temp.megooglecalendar.100.10.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.11 = TEXT
+temp.megooglecalendar.100.11.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_month}
+temp.megooglecalendar.100.11.wrap = month: '|',
+temp.megooglecalendar.100.11.insertData = 1
+temp.megooglecalendar.100.11.stdWrap.dataWrap = |
+temp.megooglecalendar.100.11.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.12 = TEXT
+temp.megooglecalendar.100.12.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_month}
+temp.megooglecalendar.100.12.wrap = month: '|',
+temp.megooglecalendar.100.12.insertData = 1
+temp.megooglecalendar.100.12.stdWrap.dataWrap = |
+temp.megooglecalendar.100.12.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.13 = TEXT
+temp.megooglecalendar.100.13.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_week}
+temp.megooglecalendar.100.13.wrap = week: '|',
+temp.megooglecalendar.100.13.insertData = 1
+temp.megooglecalendar.100.13.stdWrap.dataWrap = |
+temp.megooglecalendar.100.13.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.14 = TEXT
+temp.megooglecalendar.100.14.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_week}
+temp.megooglecalendar.100.14.wrap = week: '|',
+temp.megooglecalendar.100.14.insertData = 1
+temp.megooglecalendar.100.14.stdWrap.dataWrap = |
+temp.megooglecalendar.100.14.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.15 = TEXT
+temp.megooglecalendar.100.15.value = {LLL:EXT:me_google_calendar/locallang.xml:buttontext_day}
+temp.megooglecalendar.100.15.wrap = day: '|',
+temp.megooglecalendar.100.15.insertData = 1
+temp.megooglecalendar.100.15.stdWrap.dataWrap = |
+temp.megooglecalendar.100.15.if.isFalse = {$plugin.megooglecalendar.lllPath}
+
+temp.megooglecalendar.100.16 = TEXT
+temp.megooglecalendar.100.16.value = {LLL:{$plugin.megooglecalendar.lllPath}:buttontext_day}
+temp.megooglecalendar.100.16.wrap = day: '|',
+temp.megooglecalendar.100.16.insertData = 1
+temp.megooglecalendar.100.16.stdWrap.dataWrap = |
+temp.megooglecalendar.100.16.if.isTrue = {$plugin.megooglecalendar.lllPath}
+
+
+temp.megooglecalendar.110 = TEXT
+temp.megooglecalendar.110.value (
+	aspectRatio: 1.35,
+	allDayDefault: true,
+	firstHour: 8,
+	slotMinutes: 30,
+	defaultEventMinutes: 60,
+	eventClick: function(event) { 
+		window.open(event.url, 'gcalevent', 'width=700,height=600');
+		return false;
+	},
+ 	loading: function(bool) {
+		if (bool) {
+			$('#loading').show();
+		}else{
+			$('#loading').hide();
+		}
+	}
+	});
+});
+)
+
+//page.headerData.1555 < temp.megooglecalendar

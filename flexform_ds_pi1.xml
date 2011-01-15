@@ -1,0 +1,502 @@
+<T3DataStructure>
+	<meta>
+	<langDisable>1</langDisable>
+	<!--  <langChildren>1</langChildren>!-->
+	</meta>
+<sheets>
+	<sDEF>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.sheet_general</sheetTitle>
+		</TCEforms>
+		<type>array</type>
+		<el>
+		<what_to_display>
+			<TCEforms>
+				<onChange>reload</onChange>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.what_to_display</label>
+				<config>
+					<type>select</type>
+					<items type="array">
+						<numIndex index="0" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.CALENDAR</numIndex>
+							<numIndex index="1"></numIndex>
+						</numIndex>					
+					</items>
+					<maxitems>1</maxitems>
+					<size>1</size>
+				</config>
+			</TCEforms>
+		</what_to_display>
+		<hideTitle>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.hideTitle</label>
+				<config>
+					<type>check</type>
+				</config>
+			</TCEforms>
+		</hideTitle>
+		<defaultView>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.defaultView</label>
+				<config>
+					<type>select</type>
+					<items type="array">
+						<numIndex index="0" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.defaultView_TS</numIndex>
+							<numIndex index="1"></numIndex>
+						</numIndex>					
+						<numIndex index="1" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.defaultView.I.agendaDay</numIndex>
+							<numIndex index="1">agendaDay</numIndex>
+						</numIndex>					
+						<numIndex index="2" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.defaultView.I.agendaWeek</numIndex>
+							<numIndex index="1">agendaWeek</numIndex>
+						</numIndex>					
+						<numIndex index="3" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.defaultView.I.month</numIndex>
+							<numIndex index="1">month</numIndex>
+						</numIndex>					
+						<numIndex index="4" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.defaultView.I.basicDay</numIndex>
+							<numIndex index="1">basicDay</numIndex>
+						</numIndex>					
+						<numIndex index="5" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.defaultView.I.basicWeek</numIndex>
+							<numIndex index="1">basicWeek</numIndex>
+						</numIndex>					
+					</items>
+					<minitems>0</minitems>
+					<maxitems>1</maxitems>
+					<size>1</size>
+				</config>
+			</TCEforms>
+		</defaultView>
+		<allDaySlot>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.allDaySlot</label>
+				<config>
+					<type>check</type>
+				</config>
+			</TCEforms>
+		</allDaySlot>
+		<weekends>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.weekends</label>
+				<config>
+					<type>check</type>
+				</config>
+			</TCEforms>
+		</weekends>
+		<firstDay>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.firstDay</label>
+				<config>
+					<type>select</type>
+					<items type="array">
+						<numIndex index="0" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.firstDay_TS</numIndex>
+							<numIndex index="1"></numIndex>
+						</numIndex>					
+						<numIndex index="1" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.firstDay.I.0</numIndex>
+							<numIndex index="1">0</numIndex>
+						</numIndex>					
+						<numIndex index="2" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.firstDay.I.1</numIndex>
+							<numIndex index="1">1</numIndex>
+						</numIndex>					
+					</items>
+					<minitems>0</minitems>
+					<maxitems>1</maxitems>
+					<size>1</size>
+				</config>
+			</TCEforms>
+		</firstDay>
+		<minTime>
+			<TCEforms>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.minTime</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default></default>
+			</config>
+			</TCEforms>
+		</minTime>
+		<maxTime>
+			<TCEforms>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.maxTime</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default></default>
+			</config>
+			</TCEforms>
+		</maxTime>
+		<firstHour>
+			<TCEforms>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.firstHour</label>
+			<config>
+				<type>input</type>
+				<size>5</size>
+				<checkbox></checkbox>
+				<default></default>
+			</config>
+			</TCEforms>
+		</firstHour>
+		<weekMode>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.weekMode</label>
+				<config>
+					<type>select</type>
+					<items type="array">
+						<numIndex index="0" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.weekMode_TS</numIndex>
+							<numIndex index="1"></numIndex>
+						</numIndex>					
+						<numIndex index="1" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.weekMode.I.fixed</numIndex>
+							<numIndex index="1">fixed</numIndex>
+						</numIndex>					
+						<numIndex index="2" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.weekMode.I.variable</numIndex>
+							<numIndex index="1">variable</numIndex>
+						</numIndex>					
+					</items>
+					<minitems>0</minitems>
+					<maxitems>1</maxitems>
+					<size>1</size>
+				</config>
+			</TCEforms>
+		</weekMode>
+		</el>
+	</ROOT>
+	</sDEF>
+	<s_header>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.sheet_header</sheetTitle>
+		</TCEforms>
+		<type>array</type>
+		<el>
+		<hideHeader>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.hideHeader</label>
+				<config>
+					<type>check</type>
+				</config>
+			</TCEforms>
+		</hideHeader>
+		<headerLeft>
+			<TCEforms>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.headerLeft</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+					<numIndex index="0" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.prev</numIndex>
+						<numIndex index="1">prev</numIndex>
+					</numIndex>					
+					<numIndex index="1" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.next</numIndex>
+						<numIndex index="1">next</numIndex>
+					</numIndex>					
+					<numIndex index="2" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.today</numIndex>
+						<numIndex index="1">today</numIndex>
+					</numIndex>					
+					<numIndex index="3" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.title</numIndex>
+						<numIndex index="1">title</numIndex>
+					</numIndex>					
+					<numIndex index="4" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.month</numIndex>
+						<numIndex index="1">month</numIndex>
+					</numIndex>					
+					<numIndex index="5" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.agendaWeek</numIndex>
+						<numIndex index="1">agendaWeek</numIndex>
+					</numIndex>					
+					<numIndex index="6" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.agendaDay</numIndex>
+						<numIndex index="1">agendaDay</numIndex>
+					</numIndex>					
+					<numIndex index="7" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.basicWeek</numIndex>
+						<numIndex index="1">basicWeek</numIndex>
+					</numIndex>					
+					<numIndex index="8" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.basicDay</numIndex>
+						<numIndex index="1">basicDay</numIndex>
+					</numIndex>					
+					<numIndex index="9" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.space1</numIndex>
+						<numIndex index="1">[SPACE1]</numIndex>
+					</numIndex>					
+					<numIndex index="10" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.space2</numIndex>
+						<numIndex index="1">[SPACE2]</numIndex>
+					</numIndex>					
+				</items>
+				<multible>2</multible>
+				<size>5</size>
+				<maxitems>11</maxitems>
+				<selectedListStyle>width:150px</selectedListStyle>
+				<itemListStyle>width:150px</itemListStyle>
+			</config>
+			</TCEforms>
+		</headerLeft>
+		<headerCenter>
+			<TCEforms>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.headerCenter</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+					<numIndex index="0" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.prev</numIndex>
+						<numIndex index="1">prev</numIndex>
+					</numIndex>					
+					<numIndex index="1" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.next</numIndex>
+						<numIndex index="1">next</numIndex>
+					</numIndex>					
+					<numIndex index="2" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.today</numIndex>
+						<numIndex index="1">today</numIndex>
+					</numIndex>					
+					<numIndex index="3" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.title</numIndex>
+						<numIndex index="1">title</numIndex>
+					</numIndex>					
+					<numIndex index="4" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.month</numIndex>
+						<numIndex index="1">month</numIndex>
+					</numIndex>					
+					<numIndex index="5" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.agendaWeek</numIndex>
+						<numIndex index="1">agendaWeek</numIndex>
+					</numIndex>					
+					<numIndex index="6" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.agendaDay</numIndex>
+						<numIndex index="1">agendaDay</numIndex>
+					</numIndex>					
+					<numIndex index="7" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.basicWeek</numIndex>
+						<numIndex index="1">basicWeek</numIndex>
+					</numIndex>					
+					<numIndex index="8" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.basicDay</numIndex>
+						<numIndex index="1">basicDay</numIndex>
+					</numIndex>					
+					<numIndex index="9" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.space1</numIndex>
+						<numIndex index="1">[SPACE1]</numIndex>
+					</numIndex>					
+					<numIndex index="10" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.space2</numIndex>
+						<numIndex index="1">[SPACE2]</numIndex>
+					</numIndex>					
+				</items>
+				<multible>2</multible>
+				<size>5</size>
+				<maxitems>11</maxitems>
+				<selectedListStyle>width:150px</selectedListStyle>
+				<itemListStyle>width:150px</itemListStyle>
+			</config>
+			</TCEforms>
+		</headerCenter>
+		<headerRight>
+			<TCEforms>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.headerRight</label>
+			<config>
+				<type>select</type>
+				<items type="array">
+					<numIndex index="0" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.prev</numIndex>
+						<numIndex index="1">prev</numIndex>
+					</numIndex>					
+					<numIndex index="1" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.next</numIndex>
+						<numIndex index="1">next</numIndex>
+					</numIndex>					
+					<numIndex index="2" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.today</numIndex>
+						<numIndex index="1">today</numIndex>
+					</numIndex>					
+					<numIndex index="3" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.title</numIndex>
+						<numIndex index="1">title</numIndex>
+					</numIndex>					
+					<numIndex index="4" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.month</numIndex>
+						<numIndex index="1">month</numIndex>
+					</numIndex>					
+					<numIndex index="5" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.agendaWeek</numIndex>
+						<numIndex index="1">agendaWeek</numIndex>
+					</numIndex>					
+					<numIndex index="6" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.agendaDay</numIndex>
+						<numIndex index="1">agendaDay</numIndex>
+					</numIndex>					
+					<numIndex index="7" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.basicWeek</numIndex>
+						<numIndex index="1">basicWeek</numIndex>
+					</numIndex>					
+					<numIndex index="8" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.basicDay</numIndex>
+						<numIndex index="1">basicDay</numIndex>
+					</numIndex>					
+					<numIndex index="9" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.space1</numIndex>
+						<numIndex index="1">[SPACE1]</numIndex>
+					</numIndex>					
+					<numIndex index="10" type="array">
+						<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.header.I.space2</numIndex>
+						<numIndex index="1">[SPACE2]</numIndex>
+					</numIndex>					
+				</items>
+				<multible>2</multible>
+				<size>5</size>
+				<maxitems>11</maxitems>
+				<selectedListStyle>width:150px</selectedListStyle>
+				<itemListStyle>width:150px</itemListStyle>
+			</config>
+			</TCEforms>
+		</headerRight>
+		</el>
+	</ROOT>
+	</s_header>
+	<s_eventdetails>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.sheet_eventdetails</sheetTitle>
+		</TCEforms>
+		<type>array</type>
+		<el>
+		<noGoogleMapsLink>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.noGoogleMapsLink</label>
+				<config>
+					<type>check</type>
+					<default>0</default>
+				</config>
+			</TCEforms>
+		</noGoogleMapsLink>
+		<hideIcalDownloadButton>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.hideIcalDownloadButton</label>
+				<config>
+					<type>check</type>
+					<default>0</default>
+				</config>
+			</TCEforms>
+		</hideIcalDownloadButton>
+		<hideAddtoGoogleCalendarButton>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.hideAddtoGoogleCalendarButton</label>
+				<config>
+					<type>check</type>
+					<default>0</default>
+				</config>
+			</TCEforms>
+		</hideAddtoGoogleCalendarButton>
+		</el>
+	</ROOT>
+	</s_eventdetails>
+	<s_misc>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.sheet_misc</sheetTitle>
+		</TCEforms>
+		<type>array</type>
+		<el>
+		<cssThemePath>
+			<TCEforms>
+				<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.cssThemePath_ref</label>
+				<config>
+					<checkbox></checkbox>
+					<type>input</type>
+					<eval>trim</eval>
+					<default></default>
+					<wizards type="array">
+						<_PADDING>2</_PADDING>
+						<link type="array">
+							<type>popup</type>
+							<title>Link</title>
+							<icon>link_popup.gif</icon>
+							<script>browse_links.php?mode=wizard&amp;act=file</script>
+							<params type="array">
+								<blindLinkOptions>page,url,mail,spec,folder</blindLinkOptions>
+								<allowedExtensions>css</allowedExtensions>
+							</params>
+							<JSopenParams>height=400,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+						</link>
+					</wizards>
+				</config>
+			</TCEforms>
+		</cssThemePath>
+		<pages>
+			<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.startingpoint</label>
+			<config>
+				<type>group</type>
+				<internal_type>db</internal_type>
+				<allowed>pages</allowed>
+				<size>3</size>
+				<maxitems>22</maxitems>
+				<minitems>0</minitems>
+				<show_thumbs>1</show_thumbs>
+			</config>
+			</TCEforms>
+		</pages>
+		<recursive>
+			<TCEforms>
+			<label>LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.recursive</label>
+				<config>
+					<type>select</type>
+					<items type="array">
+						<numIndex index="0" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.recursive_TS</numIndex>
+							<numIndex index="1"></numIndex>
+						</numIndex>
+						<numIndex index="1" type="array">
+							<numIndex index="0">LLL:EXT:me_google_calendar/locallang_tca.xml:me_google_calendar.pi_flexform.recursive.I.0</numIndex>
+							<numIndex index="1">0</numIndex>
+						</numIndex>						
+						<numIndex index="2" type="array">
+							<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.1</numIndex>
+							<numIndex index="1">1</numIndex>
+						</numIndex>
+						<numIndex index="3" type="array">
+							<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.2</numIndex>
+							<numIndex index="1">2</numIndex>
+						</numIndex>
+						<numIndex index="4" type="array">
+							<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.3</numIndex>
+							<numIndex index="1">3</numIndex>
+						</numIndex>
+						<numIndex index="5" type="array">
+							<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.4</numIndex>
+							<numIndex index="1">4</numIndex>
+						</numIndex>
+						<numIndex index="6" type="array">
+							<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.5</numIndex>
+							<numIndex index="1">250</numIndex>
+						</numIndex>
+					</items>
+					<minitems>0</minitems>
+					<maxitems>1</maxitems>
+					<size>1</size>
+				</config>
+			</TCEforms>
+		</recursive>		
+		</el>
+	</ROOT>
+	</s_misc>
+</sheets>
+</T3DataStructure>

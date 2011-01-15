@@ -1,0 +1,18 @@
+2010-01-05 Alexander Grein  <ag@mediaessenz.eu>
+
+v.0.1.0: Initial Upload
+v.0.2.0: changed js configuration output generation from TS to PHP. Added flexforms for configuration possibility to show more than one google calendar by using db entries.
+v.1.0.0: Made some improvements of the flexforms configuration. Added support for T3 jQuery extension. Added this manual. 
+v.1.0.1: Set status to stable
+v.1.0.2: Update currupt manual. Added default timezone to new calendar feed entries. Some small bugfixes.
+v.1.0.3: Added jQuery noConflict mode. Added jQuery path configuration.
+v.1.0.4: Bugfix to work with CSS Styled Content <4.3. Manual Correction.
+v.1.0.5: Update to newest version of fullCalendar script (1.4.4) and jQuery (1.4.1). Manual Correction.
+v.1.0.6: Update to newest version of fullCalendar script (1.4.5) and jQuery (1.4.2).
+v.1.0.7: Small bugfix for jQuery no conflict mode.
+v.1.0.8: Update to newest version of fullCalendar script (1.4.6). Added jsMinify and jsToFooter option. Constants will grouped and ordered correctly now (Thanks to Jürgen Furrer!).
+Attention: Change Constants-Pre-var from plugin.megooglecalendar to plugin.tx_megooglecalendar_pi1. Please update your constants configuration!
+v.1.0.9: Update to newest version of fullCalendar script (1.4.7) and jQuery UI (1.8.5). Small changes in configuration (jQueryUiPath replaces jQueryUICorePath, jQueryUiDraggablePath and jQueryUiResizablePath; Added jQueryPluginPath and gcalPath)
+v.1.1.0: Added jQueryUI popup dialog for event details. Makes use of jQueryUI.dialog and jQueryUI.buttons now - so please check your jquery-ui-custom-theme-css-files for needed parts!
+v.1.1.1: Added Buttons for iCal-File (.ics) Download and “Add to Google Calendar” in Event-Details. Added Link to Google Maps in Event-Details. Updated to newest version of fullCalendar script (1.4.8) and jQuery (1.4.3).
+v.1.2.0: Update to newest version of fullCalendar script (1.4.9), jQuery (1.4.4) and jQuery UI (1.8.6). Added event detail tab in frontend plugin + option to switch off link to google maps. Bugfix for IE-problem in dynamic generated js-code (Thanks to Jesper Goos!).

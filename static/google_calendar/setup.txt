@@ -1,0 +1,40 @@
+[GLOBAL]
+
+plugin.tx_megooglecalendar_pi1 {
+    
+    jQueryNoConflict = {$plugin.megooglecalendar.jQueryNoConflict}
+    jQueryPath = {$plugin.megooglecalendar.jQueryPath}
+    jQueryUiCorePath = {$plugin.megooglecalendar.jQueryUiCorePath}
+    jQueryUiDraggablePath = {$plugin.megooglecalendar.jQueryUiDraggablePath}
+    jQueryUiResizablePath = {$plugin.megooglecalendar.jQueryUiResizablePath}
+    enableGlobal = {$plugin.megooglecalendar.enableGlobal}
+    enableUiGlobal = {$plugin.megooglecalendar.enableUiGlobal}
+	enableDraggableGlobal = {$plugin.megooglecalendar.enableDraggableGlobal}
+	enableResizableGlobal = {$plugin.megooglecalendar.enableResizableGlobal}
+	cssPath = {$plugin.megooglecalendar.cssPath}
+	cssThemePath = {$plugin.megooglecalendar.cssThemePath}
+	pages = {$plugin.megooglecalendar.pages}
+	recursive = {$plugin.megooglecalendar.recursive}
+	headerLeft = {$plugin.megooglecalendar.headerLeft}
+	headerCenter = {$plugin.megooglecalendar.headerCenter}
+	headerRight = {$plugin.megooglecalendar.headerRight}
+	defaultView = {$plugin.megooglecalendar.defaultView}
+	allDaySlot = {$plugin.megooglecalendar.allDaySlot}
+	firstDay = {$plugin.megooglecalendar.firstDay}
+	firstHour = {$plugin.megooglecalendar.firstHour}
+	weekends = {$plugin.megooglecalendar.weekends}
+	minTime = {$plugin.megooglecalendar.minTime}
+	maxTime = {$plugin.megooglecalendar.maxTime}
+	weekMode = {$plugin.megooglecalendar.weekMode}
+	titleFormatMonth = {$plugin.megooglecalendar.titleFormat.month}
+	titleFormatWeek = {$plugin.megooglecalendar.titleFormat.week}
+	titleFormatDay = {$plugin.megooglecalendar.titleFormat.day}
+	columnFormatMonth = {$plugin.megooglecalendar.columnFormat.month}
+	columnFormatWeek = {$plugin.megooglecalendar.columnFormat.week}
+	columnFormatDay = {$plugin.megooglecalendar.columnFormat.day}
+	timeFormatAgenda = {$plugin.megooglecalendar.timeFormat.agenda}
+	timeFormatGeneral = {$plugin.megooglecalendar.timeFormat.general}
+	timeFormatAxis = {$plugin.megooglecalendar.timeFormat.axis}
+	currentTimezone = {$plugin.megooglecalendar.currentTimezone}
+
+}
