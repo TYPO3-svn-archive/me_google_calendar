@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Includes the jQuery Plugin FullCalendar, which generates a skinable Calendar with different views (month, week, day, week list, day list) from Google Calendar XML Feed(s).',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '1.2.0',
+	'version' => '1.3.0',
 	'dependencies' => 'cms',
 	'conflicts' => '',
 	'priority' => '',
@@ -36,7 +36,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'depends' => array(
 			'cms' => '',
 			'php' => '5.2.0-5.3.99',
-			'typo3' => '4.1.0-4.4.99',
+			'typo3' => '4.1.0-4.5.99',
 		),
 		'conflicts' => array(
 		),
