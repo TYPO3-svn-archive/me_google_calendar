@@ -37,7 +37,7 @@
  * @package	TYPO3
  * @subpackage	tx_megooglecalendar
  */
-class tx_megooglecalendar_tx_megooglecalendar_feeds_timezone {
+class tx_megooglecalendar_feeds_timezone {
 
 	/**
 	 * [Describe function...]
@@ -47,13 +47,7 @@ class tx_megooglecalendar_tx_megooglecalendar_feeds_timezone {
 	 * @return	[type]		...
 	 */
 	function main(&$params,&$pObj)	{
-/*
-		debug('Hello World!',1);
-		debug('$params:',1);
-		debug($params);
-		debug('$pObj:',1);
-		debug($pObj);
-*/
+
 		$timezones = DateTimeZone::listAbbreviations();
 
 		$cities = array();
@@ -89,8 +83,8 @@ class tx_megooglecalendar_tx_megooglecalendar_feeds_timezone {
 
 
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/me_google_calendar/class.tx_megooglecalendar_tx_megooglecalendar_feeds_timezone.php'])	{
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/me_google_calendar/class.tx_megooglecalendar_tx_megooglecalendar_feeds_timezone.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/me_google_calendar/class.tx_megooglecalendar_feeds_timezone.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/me_google_calendar/class.tx_megooglecalendar_feeds_timezone.php']);
 }
 
 ?>

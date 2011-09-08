@@ -25,7 +25,7 @@ t3lib_extMgm::allowTableOnStandardPages('tx_megooglecalendar_feeds');
 
 
 if (TYPO3_MODE == 'BE')    {
-    include_once(t3lib_extMgm::extPath('me_google_calendar').'class.tx_megooglecalendar_tx_megooglecalendar_feeds_timezone.php');
+    include_once(t3lib_extMgm::extPath('me_google_calendar').'class.tx_megooglecalendar_feeds_timezone.php');
 }
 
 $TCA['tx_megooglecalendar_feeds'] = array (

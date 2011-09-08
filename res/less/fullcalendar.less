@@ -11,7 +11,7 @@
 @fc-blue: #10327D;
 @fc-grey: #999;
 @fc-orange: #E9820C;
-
+@fc-purple: #990099;
 
 /*
 * FullCalendar v1.5.2 Stylesheet
@@ -240,49 +240,55 @@ _overflow:hidden;}
 .fc-event.fc-orange .fc-event-inner.fc-event-skin,
 .fc-event.fc-orange a{background-color:@fc-orange;border-color:@fc-orange;color:#fff;}
 
+.fc-event.fc-purple,
+.fc-agenda .fc-event.fc-purple .fc-event-time,
+.fc-event.fc-purple .fc-event-inner.fc-event-skin,
+.fc-event.fc-purple a{background-color:@fc-purple;border-color:@fc-purple;color:#fff;}
+
+
 /* Print */
 
 @media print {
 
-.fc-event-skin {
-	background: none !important;
-	color: #000 !important;
-	}
+	.fc-event-skin {
+		background: none !important;
+		color: #000 !important;
+		}
 
-/* horizontal events */
+	/* horizontal events */
 
-.fc-event-hori {
-	border-width: 0 0 1px 0 !important;
-	border-bottom-style: dotted !important;
-	border-bottom-color: #000 !important;
-	padding: 1px 0 0 0 !important;
-	}
+	.fc-event-hori {
+		border-width: 0 0 1px 0 !important;
+		border-bottom-style: dotted !important;
+		border-bottom-color: #000 !important;
+		padding: 1px 0 0 0 !important;
+		}
 
-.fc-event-hori .fc-event-inner {
-	border-width: 0 !important;
-	padding: 0 1px !important;
-	}
+	.fc-event-hori .fc-event-inner {
+		border-width: 0 !important;
+		padding: 0 1px !important;
+		}
 
-/* vertical events */
+	/* vertical events */
 
-.fc-event-vert {
-	border-width: 0 0 0 1px !important;
-	border-left-style: dotted !important;
-	border-left-color: #000 !important;
-	padding: 0 1px 0 0 !important;
-	}
+	.fc-event-vert {
+		border-width: 0 0 0 1px !important;
+		border-left-style: dotted !important;
+		border-left-color: #000 !important;
+		padding: 0 1px 0 0 !important;
+		}
 
-.fc-event-vert .fc-event-inner {
-	border-width: 0 !important;
-	padding: 1px 0 !important;
-	}
+	.fc-event-vert .fc-event-inner {
+		border-width: 0 !important;
+		padding: 1px 0 !important;
+		}
 
-.fc-event-bg {
-	display: none !important;
-	}
+	.fc-event-bg {
+		display: none !important;
+		}
 
-.fc-event .ui-resizable-handle {
-	display: none !important;
-	}
+	.fc-event .ui-resizable-handle {
+		display: none !important;
+		}
 
 }

@@ -53,7 +53,7 @@ $TCA['tx_megooglecalendar_feeds'] = array (
 				'items' => array (
 					array('LLL:EXT:me_google_calendar/locallang_db.xml:tx_megooglecalendar_feeds.timezone.I.0', '0'),
 				),
-				'itemsProcFunc' => 'tx_megooglecalendar_tx_megooglecalendar_feeds_timezone->main',	
+				'itemsProcFunc' => 'tx_megooglecalendar_feeds_timezone->main',
 				'size' => 1,	
 				'maxitems' => 1,
 				'default' => date_default_timezone_get(),
