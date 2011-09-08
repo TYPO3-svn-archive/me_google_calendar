@@ -184,7 +184,8 @@ class tx_megooglecalendar_pi1 extends tslib_pibase {
 					eventDialog.append(\'<div class="fc-description">\' + event.description + \'</div><dl><dt>' . $this->pi_getLL('event_duration') . '</dt><dd>\' + eventDay + \'&nbsp;&nbsp;\' + eventStart +  \'&nbsp;–&nbsp;\' + eventEnd + \'</dd>\' + eventLocation + \'</dl>\' + eventButtons)
 						.dialog({
 							title: event.title,
-							width: 400
+							width: 400,
+							modal: true
 						});
 					jQuery("a.fc-icalbutton").button({ icons: {primary: "ui-icon-circle-arrow-s"}});
 					jQuery("a.fc-addtogooglebutton").button({ icons: {primary: "ui-icon-circle-plus"}});
@@ -198,7 +199,7 @@ class tx_megooglecalendar_pi1 extends tslib_pibase {
 					}
 				}
 			});
-			jQuery(\'#' . $this->getContentKey() . '_loading\').position({of: jQuery(\'#' . $this->getContentKey() . '\'),my: \'center middle\',at: \'center middle\'});
+			jQuery(\'#' . $this->getContentKey() . '_loading\').position({my: \'center\', at: \'center\', of: \'#' . $this->getContentKey() . '\'});
 			' . ($this->conf['hideTitle'] ? 'jQuery(\'#' . $this->getContentKey() . ' .fc-view table thead\').hide();' : '') . '
 		});
 		');

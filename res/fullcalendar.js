@@ -1,6 +1,6 @@
 /**
  * @preserve
- * FullCalendar v1.5
+ * FullCalendar v1.5.2
  * http://arshaw.com/fullcalendar/
  *
  * Use fullcalendar.css for basic styling.
@@ -11,7 +11,7 @@
  * Dual licensed under the MIT and GPL licenses, located in
  * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
  *
- * Date: Sat Mar 19 18:59:37 2011 -0700
+ * Date: Sun Aug 21 22:06:09 2011 -0700
  *
  */
  
@@ -111,7 +111,7 @@ var rtlDefaults = {
 
 
 
-var fc = $.fullCalendar = { version: "1.5" };
+var fc = $.fullCalendar = { version: "1.5.2" };
 var fcViews = fc.views = {};
 
 
@@ -743,8 +743,8 @@ function Header(calendar, options) {
 							};
 						}
 						if (buttonClick) {
-							var icon = options.theme ? smartProperty(options.buttonIcons, buttonName) : null;
-							var text = smartProperty(options.buttonText, buttonName);
+							var icon = options.theme ? smartProperty(options.buttonIcons, buttonName) : null; // why are we using smartProperty here?
+							var text = smartProperty(options.buttonText, buttonName); // why are we using smartProperty here?
 							var button = $(
 								"<span class='fc-button fc-button-" + buttonName + " " + tm + "-state-default'>" +
 									"<span class='fc-button-inner'>" +
@@ -1374,8 +1374,8 @@ function parseDate(s, ignoreTimezone) { // ignoreTimezone defaults to true
 		return new Date(s * 1000);
 	}
 	if (typeof s == 'string') {
-		if (s.match(/^\d+$/)) { // a UNIX timestamp
-			return new Date(parseInt(s, 10) * 1000);
+		if (s.match(/^\d+(\.\d+)?$/)) { // a UNIX timestamp
+			return new Date(parseFloat(s) * 1000);
 		}
 		if (ignoreTimezone === undefined) {
 			ignoreTimezone = true;
@@ -1390,12 +1390,12 @@ function parseDate(s, ignoreTimezone) { // ignoreTimezone defaults to true
 function parseISO8601(s, ignoreTimezone) { // ignoreTimezone defaults to false
 	// derived from http://delete.me.uk/2005/03/iso8601.html
 	// TODO: for a know glitch/feature, read tests/issue_206_parseDate_dst.html
-	var m = s.match(/^([0-9]{4})(-([0-9]{2})(-([0-9]{2})([T ]([0-9]{2}):([0-9]{2})(:([0-9]{2})(\.([0-9]+))?)?(Z|(([-+])([0-9]{2}):([0-9]{2})))?)?)?)?$/);
+	var m = s.match(/^([0-9]{4})(-([0-9]{2})(-([0-9]{2})([T ]([0-9]{2}):([0-9]{2})(:([0-9]{2})(\.([0-9]+))?)?(Z|(([-+])([0-9]{2})(:?([0-9]{2}))?))?)?)?)?$/);
 	if (!m) {
 		return null;
 	}
 	var date = new Date(m[1], 0, 1);
-	if (ignoreTimezone || !m[14]) {
+	if (ignoreTimezone || !m[13]) {
 		var check = new Date(m[1], 0, 1, 9, 0);
 		if (m[3]) {
 			date.setMonth(m[3] - 1);
@@ -1431,9 +1431,11 @@ function parseISO8601(s, ignoreTimezone) { // ignoreTimezone defaults to false
 			m[10] || 0,
 			m[12] ? Number("0." + m[12]) * 1000 : 0
 		);
-		var offset = Number(m[16]) * 60 + Number(m[17]);
-		offset *= m[15] == '-' ? 1 : -1;
-		date = new Date(+date + (offset * 60 * 1000));
+		if (m[14]) {
+			var offset = Number(m[16]) * 60 + (m[18] ? Number(m[18]) : 0);
+			offset *= m[15] == '-' ? 1 : -1;
+			date = new Date(+date + (offset * 60 * 1000));
+		}
 	}
 	return date;
 }
