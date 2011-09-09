@@ -193,20 +193,25 @@ class tx_megooglecalendar_pi1 extends tslib_pibase {
 				},
 				loading: function(bool) {
 					if (bool) {
+						jQuery(\'#' . $this->getContentKey() . '_overlay\').show();
 						jQuery(\'#' . $this->getContentKey() . '_loading\').show();
 					} else {
 						jQuery(\'#' . $this->getContentKey() . '_loading\').hide();
+						jQuery(\'#' . $this->getContentKey() . '_overlay\').hide();
 					}
 				}
 			});
-			jQuery(\'#' . $this->getContentKey() . '_loading\').position({my: \'center\', at: \'center\', of: \'#' . $this->getContentKey() . '\'});
+			var loadingWidth = jQuery(\'#' . $this->getContentKey() . ' .fc-content\').outerWidth();
+			var loadingHeight = jQuery(\'#' . $this->getContentKey() . ' .fc-content\').outerHeight();
+			jQuery(\'#' . $this->getContentKey() . '_overlay\').width(loadingWidth).height(loadingHeight).position({my: \'center\', at: \'center\', of: \'#' . $this->getContentKey() . ' .fc-content\'});
+			jQuery(\'#' . $this->getContentKey() . '_loading\').position({my: \'center\', at: \'center\', of: \'#' . $this->getContentKey() . ' .fc-content\'});
 			' . ($this->conf['hideTitle'] ? 'jQuery(\'#' . $this->getContentKey() . ' .fc-view table thead\').hide();' : '') . '
 		});
 		');
 		
 		// Add some div containers needed by fullCalendar plugin
 		// Todo: put this into a template file
-		$content = '<div id="' . $this->getContentKey() . '_loading" class="fc-loading ui-widget ui-widget-content ui-corner-all" style="display:none">' . $this->pi_getLL('loading', 'loading...') . '</div><div id="' . $this->getContentKey() . '" class="fc-calendar"></div><div id="' . $this->getContentKey() . '_dialog" class="fc-dialog" style="display:none"></div>';
+		$content = '<div id="' . $this->getContentKey() . '_loading" class="fc-loading ui-widget ui-corner-all" style="display:none"></div><div id="' . $this->getContentKey() . '_overlay" class="fc-overlay ui-widget-overlay" style="display:none"></div><div id="' . $this->getContentKey() . '" class="fc-calendar"></div><div id="' . $this->getContentKey() . '_dialog" class="fc-dialog" style="display:none"></div>';
 
 		// Add all resources
 		$this->addResources();

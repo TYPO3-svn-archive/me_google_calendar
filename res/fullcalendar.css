@@ -99,7 +99,8 @@ table.fc-border-separate{border-collapse:separate;}
 .tx-megooglecalendar-pi1{position:relative;}
 .fc table{margin-bottom:0;}
 .fc-agenda-body{overflow-y:scroll !important;height:auto !important;}
-.fc-loading{position:absolute;z-index:1000;padding:10px;font-size:0.9em;}
+.fc-loading{position:absolute;z-index:1001;padding:10px;height:25px;width:25px;background:#f0f0f0 url(images/big-f0f0f0.gif) no-repeat 50% 50%;font-size:0.9em;}
+.fc-overlay{position:absolute;z-index:1000;}
 .fc-calendar{margin:0 auto;}
 .fc-dialog{position:absolute;display:none;text-align:left;}
 .fc-dialog .fc-description{margin:0.5em 0 1em 0;}
@@ -107,7 +108,7 @@ table.fc-border-separate{border-collapse:separate;}
 .fc-dialog dt{float:left;width:70px;}
 .fc-dialog .fc-buttons{font-size:0.8em;}
 .fc-icalbutton{margin-right:10px !important;}
-.fc-event.fc-red,.fc-agenda .fc-event.fc-red .fc-event-time,.fc-event.fc-red .fc-event-inner.fc-event-skin,.fc-event.fc-red a{background-color:#aa091b;border-color:#aa091b;color:#fff;}
+.fc-event.fc-red,.fc-agenda .fc-event.fc-red .fc-event-time,.fc-event.fc-red .fc-event-inner.fc-event-skin,.fc-event.fc-red a{background-color:#cc0033;border-color:#cc0033;color:#fff;}
 .fc-event.fc-green,.fc-agenda .fc-event.fc-green .fc-event-time,.fc-event.fc-green .fc-event-inner.fc-event-skin,.fc-event.fc-green a{background-color:#82b20a;border-color:#82b20a;color:#fff;}
 .fc-event.fc-blue,.fc-agenda.fc-blue .fc-event-time,.fc-event.fc-blue .fc-event-inner.fc-event-skin,.fc-event.fc-blue a{background-color:#10327d;border-color:#10327d;color:#fff;}
 .fc-event.fc-grey,.fc-agenda .fc-event.fc-grey .fc-event-time,.fc-event.fc-grey .fc-event-inner.fc-event-skin,.fc-event.fc-grey a{background-color:#999999;border-color:#999999;color:#fff;}
