@@ -117,4 +117,7 @@ hideIcalDownloadButton = 0
 # cat=plugin.megooglecalendar/content/250; type=boolean; label=Hide add to google calendar button: Default - 0;
 hideAddtoGoogleCalendarButton = 0
 
+# cat=plugin.megooglecalendar/dims/260; type=int+; label=Height of calendar: If empty, height will follow default aspectRatio 1.35;
+height = 0
+
 }

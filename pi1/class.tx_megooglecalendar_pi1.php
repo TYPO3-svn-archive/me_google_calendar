@@ -140,6 +140,7 @@ class tx_megooglecalendar_pi1 extends tslib_pibase {
 		jQuery(document).ready(function(){
 			jQuery("#' . $this->getContentKey() . '").fullCalendar({
 				theme: ' . ($this->conf['cssThemePath'] ? 'true' : 'false') . ',
+				' . (intval($this->conf['height']) > 0 ? 'height: ' . intval($this->conf['height']) . ',' : '') . '
 				eventSources: [' . implode(',',$eventSources) . '],
 				header: ' . ($this->conf['hideHeader'] ? 'false' : '{left: \'' . $this->conf['headerLeft'] . '\',center: \'' . $this->conf['headerCenter'] . '\',right: \'' . $this->conf['headerRight'] . '\'}') . ',
 				weekMode: \'' . $this->conf['weekMode'] . '\',

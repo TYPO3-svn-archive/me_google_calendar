@@ -44,5 +44,5 @@ plugin.tx_megooglecalendar_pi1 {
 	hideIcalDownloadButton = {$plugin.tx_megooglecalendar_pi1.hideIcalDownloadButton}
 	hideAddtoGoogleCalendarButton = {$plugin.tx_megooglecalendar_pi1.hideAddtoGoogleCalendarButton}
 	noGoogleMapsLink = {$plugin.tx_megooglecalendar_pi1.noGoogleMapsLink}
-
+	height = {$plugin.tx_megooglecalendar_pi1.height}
 }
