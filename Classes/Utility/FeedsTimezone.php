@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2012 Alexander Grein <ag@mediaessenz.eu>
+*  (c) 2012 Alexander Grein <mail@mediaessenz.de>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -25,7 +25,7 @@
 /**
  * Class/Function which manipulates the item-array for table/field tx_megooglecalendar_feeds_timezone.
  *
- * @author	Alexander Grein <ag@mediaessenz.eu>
+ * @author	Alexander Grein <mail@mediaessenz.de>
  * @package	TYPO3
  * @subpackage	tx_megooglecalendar
  */
