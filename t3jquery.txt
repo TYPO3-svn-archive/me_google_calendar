@@ -1,2 +1,0 @@
-script=res/fullcalendar.js,res/gcal.js
-components=jQuery,Core,Draggable,Resizable,Dialog,Button,Position
