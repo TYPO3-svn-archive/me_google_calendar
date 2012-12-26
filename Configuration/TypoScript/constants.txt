@@ -1,0 +1,148 @@
+plugin.tx_megooglecalendar {
+	view {
+		# cat=plugin.tx_megooglecalendar/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:me_google_calendar/Resources/Private/Templates/
+		# cat=plugin.tx_megooglecalendar/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:me_google_calendar/Resources/Private/Partials/
+		# cat=plugin.tx_megooglecalendar/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:me_google_calendar/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_megooglecalendar//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	settings {
+		# cat=plugin.megooglecalendar/file/10; type=string; label=Path to css file: Default - EXT:me_google_calendar/Resources/fullcalendar.css;
+		cssPath = EXT:me_google_calendar/Resources/Public/StyleSheets/fullcalendar.css
+
+		# cat=plugin.megooglecalendar/file/20; type=string; label=Path to theme css file: Default - EXT:me_google_calendar/Resources/themes/smoothness/jquery-ui-1.8.16.custom.css;
+		cssThemePath = EXT:me_google_calendar/Resources/Public/JavaScripts/themes/smoothness/jquery-ui-1.8.16.custom.css
+
+		# cat=plugin.megooglecalendar/file/30; type=string; label=Path to jQuery file: Default - EXT:me_google_calendar/Resources/jquery/jquery-1.6.2.min.js;
+		jQueryPath = EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-1.6.2.min.js
+
+		# cat=plugin.megooglecalendar/file/40; type=string; label=Path to jQuery Ui file: Default - EXT:me_google_calendar/Resources/jquery/jquery-ui-1.8.16.custom.min.js;
+		jQueryUiPath = EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-ui-1.8.16.custom.min.js
+
+		# cat=plugin.megooglecalendar/file/50; type=string; label=Path to fullcalendar.js file: Default - EXT:me_google_calendar/Resources/fullcalendar.min.js;
+		fullCalendarPath = EXT:me_google_calendar/Resources/Public/JavaScripts/fullcalendar.min.js
+
+		# cat=plugin.megooglecalendar/file/60; type=string; label=Path to jQuery plugin gcal file: Default - EXT:me_google_calendar/Resources/gcal.js;
+		gcalPath = EXT:me_google_calendar/Resources/Public/JavaScripts/gcal.js
+
+		# cat=plugin.megooglecalendar/file/70; type=string; label=Path to jQuery calendar file: Default - EXT:me_google_calendar/Resources/me_google_calendar.js;
+		meGoogleCalendarPath = EXT:me_google_calendar/Resources/Public/JavaScripts/me_google_calendar.js
+
+		# cat=plugin.megooglecalendar/enable/10; type=boolean; label=jQuery external: The given path is an external url (starts with //);
+		jQueryExternal = 0
+
+		# cat=plugin.megooglecalendar/enable/20; type=boolean; label=Disable minify jQuery: If set (default), jQuery will *not* be minified
+		jQueryDisableCompression = 1
+
+		# cat=plugin.megooglecalendar/enable/30; type=boolean; label=jQueryUi external: The given path is an external url (starts with //);
+		jQueryUiExternal = 0
+
+		# cat=plugin.megooglecalendar/enable/40; type=boolean; label=Disable minify jQueryUi: If set (default), jQueryUi will *not* be minified
+		jQueryUiDisableCompression = 1
+
+		# cat=plugin.megooglecalendar/enable/50; type=boolean; label=Disable minify fullcalendar: If set, fullcalendar.js will *not* be minified
+		fullCalendarDisableCompression = 0
+
+		# cat=plugin.megooglecalendar/enable/60; type=boolean; label=Disable minify gcal: If set, gcal.js will *not* be minified
+		gcalDisableCompression = 0
+
+		# cat=plugin.megooglecalendar/enable/70; type=boolean; label=Disable minify me_google_calendar: If set, me_google_calendar.js will *not* be minified
+		meGoogleCalendarDisableCompression = 0
+
+		# cat=plugin.megooglecalendar/enable/80; type=options[includeJSFooterlibs,includeJSlibs]; label=jsLibsPosition: includeJSFooterlibs: Javascript libraries in footer / includeJSlibs: Javascript libraries in header;
+		jsLibsPosition = includeJSFooterlibs
+
+		# cat=plugin.megooglecalendar/enable/90; type=options[includeJSFooter,includeJS]; label=jsPosition: includeJSFooter: Javascript in footer / includeJS: Javascript in header;
+		jsPosition = includeJSFooter
+
+		# cat=plugin.megooglecalendar/content/020; type=int+; label=Recursive level: Default - 0;
+		recursive = 0
+
+		# cat=plugin.megooglecalendar/content/025; type=boolean; label=hide header content: Default - 0;
+		hideHeader = 0
+
+		# cat=plugin.megooglecalendar/content/030; type=string; label=Left header content: Default - prev,next today - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
+		headerLeft = prev,next today
+
+		# cat=plugin.megooglecalendar/content/040; type=string; label=Center header content: Default - title - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
+		headerCenter = title
+
+		# cat=plugin.megooglecalendar/content/050; type=string; label=Right header content: Default - month,agendaWeek,agendaDay - Allowed - prev,next,today,title,month,agendaWeek,agendaDay,basicWeek,basicDay - Use [Space] for distance;
+		headerRight = month,agendaWeek,agendaDay
+
+		# cat=plugin.megooglecalendar/content/060; type=string; label=Default view: Default - agendaWeek - Allowed - month,agendaWeek,agendaDay,basicWeek,basicDay;
+		defaultView = agendaWeek
+
+		# cat=plugin.megooglecalendar/content/070; type=boolean; label=Show all day slot;
+		allDaySlot = 0
+
+		# cat=plugin.megooglecalendar/content/080; type=options[Monday=1, Sunday=0]; label=First day of week;
+		firstDay = 0
+
+		# cat=plugin.megooglecalendar/content/090; type=boolean; label=Show weekends;
+		weekends = 0
+
+		# cat=plugin.megooglecalendar/content/100; type=string; label=Min time: Default - 0;
+		minTime = 0
+
+		# cat=plugin.megooglecalendar/content/110; type=string; label=Max time: Default - 24;
+		maxTime = 24
+
+		# cat=plugin.megooglecalendar/content/120; type=string; label=First hour of day;
+		firstHour = 8
+
+		# cat=plugin.megooglecalendar/content/130; type=options[fixed=fixed, variable=variable]; label=Week mode: Default - variable;
+		weekMode = variable
+
+		# cat=plugin.megooglecalendar/content/135; type=boolean; label=hide title content: Default - 0;
+		hideTitle = 0
+
+		# cat=plugin.megooglecalendar/content/140; type=string; label=Title format month: Default - MMMM yyyy;
+		titleFormat.month = MMMM yyyy
+
+		# cat=plugin.megooglecalendar/content/150; type=string; label=Title format week: Default - d. MMM[ yyyy]{ '&#8212,' d. [ MMM] yyyy};
+		titleFormat.week = d. MMM[ yyyy]{ '&#8212;' d. [ MMM] yyyy}
+
+		# cat=plugin.megooglecalendar/content/160; type=string; label=Title format day: Default - dddd, d. MMM, yyyy;
+		titleFormat.day = dddd, d. MMM, yyyy
+
+		# cat=plugin.megooglecalendar/content/170; type=string; label=Column format month: Default - ddd;
+		columnFormat.month = ddd
+
+		# cat=plugin.megooglecalendar/content/180; type=string; label=Column format week: Default - ddd dd.MM;
+		columnFormat.week = ddd dd.MM
+
+		# cat=plugin.megooglecalendar/content/190; type=string; label=Column format day: Default - dddd dd.MM;
+		columnFormat.day = dddd dd.MM
+
+		# cat=plugin.megooglecalendar/content/200; type=string; label=Time format agenda: Default - HH:mm{ - HH:mm};
+		timeFormat.agenda = HH:mm{ - HH:mm}
+
+		# cat=plugin.megooglecalendar/content/210; type=string; label=Time format general: Default - HH:mm;
+		timeFormat.general = HH:mm
+
+		# cat=plugin.megooglecalendar/content/220; type=string; label=Axis format: Default - HH:mm;
+		timeFormat.axis = HH:mm
+
+		# cat=plugin.megooglecalendar/content/230; type=boolean; label=Do not generate link to google maps: Default - 0;
+		noGoogleMapsLink = 0
+
+		# cat=plugin.megooglecalendar/content/240; type=boolean; label=Hide ical download button in event details: Default - 0;
+		hideIcalDownloadButton = 0
+
+		# cat=plugin.megooglecalendar/content/250; type=boolean; label=Hide add to google calendar button: Default - 0;
+		hideAddtoGoogleCalendarButton = 0
+
+		# cat=plugin.megooglecalendar/dims/260; type=int+; label=Height of calendar: If empty, height will follow default aspectRatio 1.35;
+		height = 0
+
+		# cat=plugin.megooglecalendar/general/10; type=string; label=override flexform setting if empty;
+		overrideFlexformSettingsIfEmpty = cssThemePath,headerLeft,headerCenter,headerRight,defaultView,allDaySlot,firstDay,firstHour,weekends,minTime,maxTime,hideTitle,hideIcalDownloadButton,hideAddtoGoogleCalendarButton,noGoogleMapsLink,height
+
+	}
+}

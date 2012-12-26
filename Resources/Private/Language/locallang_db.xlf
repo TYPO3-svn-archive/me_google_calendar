@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-12-14T15:36:56Z" product-name="me_google_calendar">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar">
+				<source>Calendar</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.timezone">
+				<source>Timezone</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.css">
+				<source>Css</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.timezone.I.0">
+				<source>Please select a timezone ...</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_general">
+				<source>General Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.what_to_display">
+				<source>What to display:</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.CALENDAR">
+				<source>Google Calendar</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView">
+				<source>Default view</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView_TS">
+				<source>Defined by TypoScript</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.agendaDay">
+				<source>Day</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.agendaWeek">
+				<source>Week</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.month">
+				<source>Month</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.basicDay">
+				<source>Day list</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.defaultView.I.basicWeek">
+				<source>Week list</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.hideTitle">
+				<source>Hide Title</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.allDaySlot">
+				<source>Show all day slot</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.weekends">
+				<source>Show Weekends</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.minTime">
+				<source>Min time</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.maxTime">
+				<source>Max time</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.firstHour">
+				<source>First our</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode">
+				<source>Week mode</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode_TS">
+				<source>Defined by TypoScript</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode.I.fixed">
+				<source>Fixed</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.weekMode.I.variable">
+				<source>Variable</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay">
+				<source>First day of week</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay_TS">
+				<source>Defined by TypoScript</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay.I.0">
+				<source>Sunday</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.firstDay.I.1">
+				<source>Monday</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_header">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.hideHeader">
+				<source>Hide Header</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.headerLeft">
+				<source>Header left</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.headerCenter">
+				<source>Header center</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.headerRight">
+				<source>Header right</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.prev">
+				<source>Prev</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.next">
+				<source>Next</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.today">
+				<source>Today</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.month">
+				<source>Month</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaWeek">
+				<source>Week</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.agendaDay">
+				<source>Day</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicWeek">
+				<source>Week list</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.basicDay">
+				<source>Day list</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space1">
+				<source>[SPACE1]</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.header.I.space2">
+				<source>[SPACE2]</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_misc">
+				<source>Other Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.cssThemePath_ref">
+				<source>Theme CSS file reference</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.recursive">
+				<source>Recursive level selection:</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.recursive_TS">
+				<source>Defined by TypoScript</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.recursive.I.0">
+				<source>0 levels</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.startingpoint">
+				<source>Page(s) with google calendar feed records</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.tsconfig">
+				<source>Typoscript for this content element (plugin.me_google_calendar.[your TS])</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.yes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.no">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.uid">
+				<source>ID:</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.tstamp">
+				<source>Last change:</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pid">
+				<source>Page:</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.sheet_eventdetails">
+				<source>Event Details Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.hideIcalDownloadButton">
+				<source>Hide iCal download button</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.hideAddtoGoogleCalendarButton">
+				<source>Hide add to Google Calendar button</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.pi_flexform.noGoogleMapsLink">
+				<source>Do not generate link to Google Maps</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

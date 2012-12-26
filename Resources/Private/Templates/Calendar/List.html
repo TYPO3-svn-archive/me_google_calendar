@@ -1,0 +1,12 @@
+<f:layout name="Default" />
+
+<div class="namespace-helper" xmlns:in2="http://www.in2code.de/ns/in2extbase/ViewHelpers" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns:fed="http://fedext.net/ns/fed/ViewHelpers" xmlns:flux="http://fedext.net/ns/flux/ViewHelpers" xmlns:v="http://fedext.net/ns/vhs/ViewHelpers">
+    <f:section name="main">
+        <f:flashMessages/>
+        <f:render partial="Calendar/Settings" arguments="{_all}"/>
+        <div id="{contentKey}_loading" class="fc-loading ui-widget ui-corner-all" style="display:none"></div>
+        <div id="{contentKey}_overlay" class="fc-overlay ui-widget-overlay" style="display:none"></div>
+        <div id="{contentKey}" class="fc-calendar"></div>
+        <div id="{contentKey}_dialog" class="fc-dialog" style="display:none"></div>
+    </f:section>
+</div>

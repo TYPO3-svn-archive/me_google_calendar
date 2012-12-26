@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-12-14T15:36:56Z" product-name="me_google_calendar">
+		<header/>
+		<body>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar">
+				<source>Calendar</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.timezone">
+				<source>Timezone</source>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.css">
+				<source>Css</source>
+			</trans-unit>
+			<trans-unit id="january" xml:space="preserve">
+				<source>January</source>
+			</trans-unit>
+			<trans-unit id="february" xml:space="preserve">
+				<source>February</source>
+			</trans-unit>
+			<trans-unit id="march" xml:space="preserve">
+				<source>March</source>
+			</trans-unit>
+			<trans-unit id="april" xml:space="preserve">
+				<source>April</source>
+			</trans-unit>
+			<trans-unit id="may" xml:space="preserve">
+				<source>May</source>
+			</trans-unit>
+			<trans-unit id="june" xml:space="preserve">
+				<source>June</source>
+			</trans-unit>
+			<trans-unit id="july" xml:space="preserve">
+				<source>July</source>
+			</trans-unit>
+			<trans-unit id="august" xml:space="preserve">
+				<source>August</source>
+			</trans-unit>
+			<trans-unit id="september" xml:space="preserve">
+				<source>September</source>
+			</trans-unit>
+			<trans-unit id="october" xml:space="preserve">
+				<source>October</source>
+			</trans-unit>
+			<trans-unit id="november" xml:space="preserve">
+				<source>November</source>
+			</trans-unit>
+			<trans-unit id="december" xml:space="preserve">
+				<source>December</source>
+			</trans-unit>
+			<trans-unit id="jan" xml:space="preserve">
+				<source>Jan</source>
+			</trans-unit>
+			<trans-unit id="feb" xml:space="preserve">
+				<source>Feb</source>
+			</trans-unit>
+			<trans-unit id="mar" xml:space="preserve">
+				<source>Mar</source>
+			</trans-unit>
+			<trans-unit id="apr" xml:space="preserve">
+				<source>Apr</source>
+			</trans-unit>
+			<trans-unit id="may_short" xml:space="preserve">
+				<source>May</source>
+			</trans-unit>
+			<trans-unit id="jun" xml:space="preserve">
+				<source>Jun</source>
+			</trans-unit>
+			<trans-unit id="jul" xml:space="preserve">
+				<source>Jul</source>
+			</trans-unit>
+			<trans-unit id="aug" xml:space="preserve">
+				<source>Aug</source>
+			</trans-unit>
+			<trans-unit id="sep" xml:space="preserve">
+				<source>Sep</source>
+			</trans-unit>
+			<trans-unit id="oct" xml:space="preserve">
+				<source>Oct</source>
+			</trans-unit>
+			<trans-unit id="nov" xml:space="preserve">
+				<source>Nov</source>
+			</trans-unit>
+			<trans-unit id="dec" xml:space="preserve">
+				<source>Dec</source>
+			</trans-unit>
+			<trans-unit id="sunday" xml:space="preserve">
+				<source>Sunday</source>
+			</trans-unit>
+			<trans-unit id="monday" xml:space="preserve">
+				<source>Monday</source>
+			</trans-unit>
+			<trans-unit id="tuesday" xml:space="preserve">
+				<source>Tuesday</source>
+			</trans-unit>
+			<trans-unit id="wednesday" xml:space="preserve">
+				<source>Wednesday</source>
+			</trans-unit>
+			<trans-unit id="thursday" xml:space="preserve">
+				<source>Thursday</source>
+			</trans-unit>
+			<trans-unit id="friday" xml:space="preserve">
+				<source>Friday</source>
+			</trans-unit>
+			<trans-unit id="saturday" xml:space="preserve">
+				<source>Saturday</source>
+			</trans-unit>
+			<trans-unit id="sun" xml:space="preserve">
+				<source>Sun</source>
+			</trans-unit>
+			<trans-unit id="mon" xml:space="preserve">
+				<source>Mon</source>
+			</trans-unit>
+			<trans-unit id="tue" xml:space="preserve">
+				<source>Tue</source>
+			</trans-unit>
+			<trans-unit id="wed" xml:space="preserve">
+				<source>Wed</source>
+			</trans-unit>
+			<trans-unit id="thu" xml:space="preserve">
+				<source>Thu</source>
+			</trans-unit>
+			<trans-unit id="fri" xml:space="preserve">
+				<source>Fri</source>
+			</trans-unit>
+			<trans-unit id="sat" xml:space="preserve">
+				<source>Sat</source>
+			</trans-unit>
+			<trans-unit id="alldaytext" xml:space="preserve">
+				<source>Allday</source>
+			</trans-unit>
+			<trans-unit id="buttontext_prev" xml:space="preserve">
+				<source>&amp;nbsp;&amp;#9668;&amp;nbsp;</source>
+			</trans-unit>
+			<trans-unit id="buttontext_next" xml:space="preserve">
+				<source>&amp;nbsp;&amp;#9658;&amp;nbsp;</source>
+			</trans-unit>
+			<trans-unit id="buttontext_prev_year" xml:space="preserve">
+				<source>&amp;nbsp;&amp;lt;&amp;lt;&amp;nbsp;</source>
+			</trans-unit>
+			<trans-unit id="buttontext_next_year" xml:space="preserve">
+				<source>&amp;nbsp;&amp;gt;&amp;gt;&amp;nbsp;</source>
+			</trans-unit>
+			<trans-unit id="buttontext_today" xml:space="preserve">
+				<source>Today</source>
+			</trans-unit>
+			<trans-unit id="buttontext_month" xml:space="preserve">
+				<source>Month</source>
+			</trans-unit>
+			<trans-unit id="buttontext_week" xml:space="preserve">
+				<source>Week</source>
+			</trans-unit>
+			<trans-unit id="buttontext_day" xml:space="preserve">
+				<source>Day</source>
+			</trans-unit>
+			<trans-unit id="event_location" xml:space="preserve">
+				<source>Where</source>
+			</trans-unit>
+			<trans-unit id="event_location_google_maps_link_title" xml:space="preserve">
+				<source>Show this place in Google Maps</source>
+			</trans-unit>
+			<trans-unit id="event_duration" xml:space="preserve">
+				<source>When</source>
+			</trans-unit>
+			<trans-unit id="event_download_ical" xml:space="preserve">
+				<source>Download iCal-File (.ics)</source>
+			</trans-unit>
+			<trans-unit id="event_download_ical_title" xml:space="preserve">
+				<source>Download iCal-File (.ics) for import in your own calendar</source>
+			</trans-unit>
+			<trans-unit id="event_add_to_google" xml:space="preserve">
+				<source>Google Calendar</source>
+			</trans-unit>
+			<trans-unit id="event_add_to_google_title" xml:space="preserve">
+				<source>Add this event to your own Google Calendar</source>
+			</trans-unit>
+			<trans-unit id="loading" xml:space="preserve">
+				<source>loading...</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2012-12-16T17:38:25Z" product-name="me_google_calendar">
+		<header/>
+		<body>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar">
+				<source>Calendar</source>
+				<target>Kalender</target>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.url">
+				<source>Url</source>
+				<target>Url</target>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.timezone">
+				<source>Timezone</source>
+				<target>Timezone</target>
+			</trans-unit>
+			<trans-unit id="tx_megooglecalendar_domain_model_calendar.css">
+				<source>Css</source>
+				<target>Css</target>
+			</trans-unit>
+			<trans-unit id="january" xml:space="preserve" approved="yes">
+				<source>January</source>
+				<target>Januar</target>
+			</trans-unit>
+			<trans-unit id="february" xml:space="preserve" approved="yes">
+				<source>February</source>
+				<target>Februar</target>
+			</trans-unit>
+			<trans-unit id="march" xml:space="preserve" approved="yes">
+				<source>March</source>
+				<target>März</target>
+			</trans-unit>
+			<trans-unit id="april" xml:space="preserve" approved="yes">
+				<source>April</source>
+				<target>April</target>
+			</trans-unit>
+			<trans-unit id="may" xml:space="preserve" approved="yes">
+				<source>May</source>
+				<target>Mai</target>
+			</trans-unit>
+			<trans-unit id="june" xml:space="preserve" approved="yes">
+				<source>June</source>
+				<target>Juni</target>
+			</trans-unit>
+			<trans-unit id="july" xml:space="preserve" approved="yes">
+				<source>July</source>
+				<target>Juli</target>
+			</trans-unit>
+			<trans-unit id="august" xml:space="preserve" approved="yes">
+				<source>August</source>
+				<target>August</target>
+			</trans-unit>
+			<trans-unit id="september" xml:space="preserve" approved="yes">
+				<source>September</source>
+				<target>September</target>
+			</trans-unit>
+			<trans-unit id="october" xml:space="preserve" approved="yes">
+				<source>October</source>
+				<target>Oktober</target>
+			</trans-unit>
+			<trans-unit id="november" xml:space="preserve" approved="yes">
+				<source>November</source>
+				<target>November</target>
+			</trans-unit>
+			<trans-unit id="december" xml:space="preserve" approved="yes">
+				<source>December</source>
+				<target>Dezember</target>
+			</trans-unit>
+			<trans-unit id="jan" xml:space="preserve" approved="yes">
+				<source>Jan</source>
+				<target>Jan</target>
+			</trans-unit>
+			<trans-unit id="feb" xml:space="preserve" approved="yes">
+				<source>Feb</source>
+				<target>Feb</target>
+			</trans-unit>
+			<trans-unit id="mar" xml:space="preserve" approved="yes">
+				<source>Mar</source>
+				<target>Mrz</target>
+			</trans-unit>
+			<trans-unit id="apr" xml:space="preserve" approved="yes">
+				<source>Apr</source>
+				<target>Apr</target>
+			</trans-unit>
+			<trans-unit id="may_short" xml:space="preserve" approved="yes">
+				<source>May</source>
+				<target>May</target>
+			</trans-unit>
+			<trans-unit id="jun" xml:space="preserve" approved="yes">
+				<source>Jun</source>
+				<target>Jun</target>
+			</trans-unit>
+			<trans-unit id="jul" xml:space="preserve" approved="yes">
+				<source>Jul</source>
+				<target>Jul</target>
+			</trans-unit>
+			<trans-unit id="aug" xml:space="preserve" approved="yes">
+				<source>Aug</source>
+				<target>Aug</target>
+			</trans-unit>
+			<trans-unit id="sep" xml:space="preserve" approved="yes">
+				<source>Sep</source>
+				<target>Sep</target>
+			</trans-unit>
+			<trans-unit id="oct" xml:space="preserve" approved="yes">
+				<source>Oct</source>
+				<target>Okt</target>
+			</trans-unit>
+			<trans-unit id="nov" xml:space="preserve" approved="yes">
+				<source>Nov</source>
+				<target>Nov</target>
+			</trans-unit>
+			<trans-unit id="dec" xml:space="preserve" approved="yes">
+				<source>Dec</source>
+				<target>Dez</target>
+			</trans-unit>
+			<trans-unit id="sunday" xml:space="preserve" approved="yes">
+				<source>Sunday</source>
+				<target>Sonntag</target>
+			</trans-unit>
+			<trans-unit id="monday" xml:space="preserve" approved="yes">
+				<source>Monday</source>
+				<target>Montag</target>
+			</trans-unit>
+			<trans-unit id="tuesday" xml:space="preserve" approved="yes">
+				<source>Tuesday</source>
+				<target>Dienstag</target>
+			</trans-unit>
+			<trans-unit id="wednesday" xml:space="preserve" approved="yes">
+				<source>Wednesday</source>
+				<target>Mittwoch</target>
+			</trans-unit>
+			<trans-unit id="thursday" xml:space="preserve" approved="yes">
+				<source>Thursday</source>
+				<target>Donnerstag</target>
+			</trans-unit>
+			<trans-unit id="friday" xml:space="preserve" approved="yes">
+				<source>Friday</source>
+				<target>Freitag</target>
+			</trans-unit>
+			<trans-unit id="saturday" xml:space="preserve" approved="yes">
+				<source>Saturday</source>
+				<target>Samstag</target>
+			</trans-unit>
+			<trans-unit id="sun" xml:space="preserve" approved="yes">
+				<source>Sun</source>
+				<target>So</target>
+			</trans-unit>
+			<trans-unit id="mon" xml:space="preserve" approved="yes">
+				<source>Mon</source>
+				<target>Mo</target>
+			</trans-unit>
+			<trans-unit id="tue" xml:space="preserve" approved="yes">
+				<source>Tue</source>
+				<target>Di</target>
+			</trans-unit>
+			<trans-unit id="wed" xml:space="preserve" approved="yes">
+				<source>Wed</source>
+				<target>Mi</target>
+			</trans-unit>
+			<trans-unit id="thu" xml:space="preserve" approved="yes">
+				<source>Thu</source>
+				<target>Do</target>
+			</trans-unit>
+			<trans-unit id="fri" xml:space="preserve" approved="yes">
+				<source>Fri</source>
+				<target>Fr</target>
+			</trans-unit>
+			<trans-unit id="sat" xml:space="preserve" approved="yes">
+				<source>Sat</source>
+				<target>Sa</target>
+			</trans-unit>
+			<trans-unit id="alldaytext" xml:space="preserve" approved="yes">
+				<source>Allday</source>
+				<target>Ganztags</target>
+			</trans-unit>
+			<trans-unit id="buttontext_today" xml:space="preserve" approved="yes">
+				<source>Today</source>
+				<target>Heute</target>
+			</trans-unit>
+			<trans-unit id="buttontext_month" xml:space="preserve" approved="yes">
+				<source>Month</source>
+				<target>Monat</target>
+			</trans-unit>
+			<trans-unit id="buttontext_week" xml:space="preserve" approved="yes">
+				<source>Week</source>
+				<target>Woche</target>
+			</trans-unit>
+			<trans-unit id="buttontext_day" xml:space="preserve" approved="yes">
+				<source>Day</source>
+				<target>Tag</target>
+			</trans-unit>
+			<trans-unit id="event_location" xml:space="preserve" approved="yes">
+				<source>Where</source>
+				<target>Wo</target>
+			</trans-unit>
+			<trans-unit id="event_location_google_maps_link_title" xml:space="preserve" approved="yes">
+				<source>Show this place in Google Maps</source>
+				<target>Zeigt diesen Ort in Google Maps an</target>
+			</trans-unit>
+			<trans-unit id="event_duration" xml:space="preserve" approved="yes">
+				<source>When</source>
+				<target>Wann</target>
+			</trans-unit>
+			<trans-unit id="event_download_ical" xml:space="preserve" approved="yes">
+				<source>Download iCal-File (.ics)</source>
+				<target>Download iCal-Datei (.ics)</target>
+			</trans-unit>
+			<trans-unit id="event_download_ical_title" xml:space="preserve" approved="yes">
+				<source>Download iCal-File (.ics) for import in your own calendar</source>
+				<target>iCal-File (.ics) für Import in eigenen Kalender herunteladen</target>
+			</trans-unit>
+			<trans-unit id="event_add_to_google" xml:space="preserve" approved="yes">
+				<source>Google Calendar</source>
+				<target>Google Kalender</target>
+			</trans-unit>
+			<trans-unit id="event_add_to_google_title" xml:space="preserve" approved="yes">
+				<source>Add this event to your own Google Calendar</source>
+				<target>Fügt dieses Ereignis Ihrem eigenen Google Kalender hinzu</target>
+			</trans-unit>
+			<trans-unit id="loading" xml:space="preserve" approved="yes">
+				<source>loading...</source>
+				<target>laden...</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

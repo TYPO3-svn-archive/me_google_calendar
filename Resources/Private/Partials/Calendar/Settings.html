@@ -1,0 +1,68 @@
+{namespace megc=Tx_MeGoogleCalendar_ViewHelpers}
+<script language="javascript">
+    {contentKey}_settings = <![CDATA[{]]>
+        theme: <megc:Div.JsBool>{settings.cssThemePath}</megc:Div.JsBool>,
+        <f:if condition="{settings.height} > 0"><f:then>height: '{settings.height}',</f:then></f:if>
+        dayNames: ['<f:translate key="sunday" />','<f:translate key="monday" />','<f:translate key="tuesday" />','<f:translate key="wednesday" />','<f:translate key="thursday" />','<f:translate key="friday" />','<f:translate key="saturday" />'],
+        dayNamesShort: ['<f:translate key="sun" />','<f:translate key="mon" />','<f:translate key="tue" />','<f:translate key="wed" />','<f:translate key="thu" />','<f:translate key="fri" />','<f:translate key="sat" />'],
+        monthNames: ['<f:translate key="january" />','<f:translate key="february" />','<f:translate key="march" />','<f:translate key="april" />','<f:translate key="may" />','<f:translate key="june" />','<f:translate key="july" />','<f:translate key="august" />','<f:translate key="september" />','<f:translate key="october" />','<f:translate key="november" />','<f:translate key="december" />'],
+        monthNamesShort: ['<f:translate key="jan" />','<f:translate key="feb" />','<f:translate key="mar" />','<f:translate key="apr" />','<f:translate key="may_short" />','<f:translate key="jun" />','<f:translate key="jul" />','<f:translate key="aug" />','<f:translate key="sep" />','<f:translate key="oct" />','<f:translate key="nov" />','<f:translate key="dec" />'],
+        calendarFeeds: [<f:for each="{calendars}" as="calendar" iteration="calendarIterator"><![CDATA[{]]>url:'{calendar.url}', className: '{calendar.css}', timeZone: '{calendar.timezone}'<![CDATA[}]]><f:if condition="calendarIterator.isLast"><f:then></f:then><f:else>,</f:else></f:if></f:for>],
+        header: <f:if condition="{settings.hideHeader}"><f:then>false</f:then><f:else><![CDATA[{]]>left: '<megc:Div.FormatHeaderValue>{settings.headerLeft}</megc:Div.FormatHeaderValue>',center: '<megc:Div.FormatHeaderValue>{settings.headerCenter}</megc:Div.FormatHeaderValue>',right: '<megc:Div.FormatHeaderValue>{settings.headerRight}</megc:Div.FormatHeaderValue>'<![CDATA[}]]></f:else></f:if>,
+        weekMode: '{settings.weekMode}',
+        defaultView: '{settings.defaultView}',
+        weekends: <megc:Div.JsBool>{settings.weekends}</megc:Div.JsBool>,
+        allDaySlot: <megc:Div.JsBool>{settings.allDaySlot}</megc:Div.JsBool>,
+        minTime: '{settings.minTime}',
+        maxTime: '{settings.maxTime}',
+        firstDay: '{settings.firstDay}',
+        titleFormat: <![CDATA[{]]>month: "{settings.titleFormatMonth}",week: "<f:format.raw>{settings.titleFormatWeek}</f:format.raw>",day: "{settings.titleFormatDay}"<![CDATA[}]]>,
+        columnFormat: <![CDATA[{]]>month: "{settings.columnFormatMonth}",week: "{settings.columnFormatWeek}",day: "{settings.columnFormatDay}"<![CDATA[}]]>,
+        timeFormat: <![CDATA[{]]>agenda: "{settings.timeFormatAgenda}",'': "{settings.timeFormatGeneral}"<![CDATA[}]]>,
+        axisFormat: '{settings.timeFormatAxis}',
+        allDayText: '<f:translate key="alldaytext" />',
+        firstHour: '{settings.firstHour}',
+        buttonText: <![CDATA[{]]>prev: '<f:translate key="buttontext_prev" />',next: '<f:translate key="buttontext_next" />',prevYear: '<f:translate key="buttontext_prev_year" />',nextYear: '<f:translate key="buttontext_next_year" />',today: '<f:translate key="buttontext_today" />',month: '<f:translate key="buttontext_month" />',week: '<f:translate key="buttontext_week" />',day: '<f:translate key="buttontext_day" />'<![CDATA[}]]>,
+        eventClick: function(event) <![CDATA[{]]>
+            var eventDialog = $('#{contentKey}_dialog');
+            eventDialog.find('*').remove();
+            var settings = eval('{contentKey}_settings');
+            var eventDay = $.fullCalendar.formatDate(event.start, "{settings.columnFormatDay}", <![CDATA[{]]>dayNames: settings.dayNames<![CDATA[}]]>);
+            var eventStart = $.fullCalendar.formatDate(event.start, "{settings.timeFormatGeneral}");
+            var eventEnd = $.fullCalendar.formatDate(event.end, "{settings.timeFormatGeneral}");
+            var downloadIcal = <f:if condition="{settings.hideIcalDownloadButton}"><f:then>''</f:then><f:else>'<a href="' + event.ical + '" title="<f:translate key='event_download_ical_title' />" class="fc-icalbutton"><f:translate key="event_download_ical" /></a>'</f:else></f:if>;
+            var addToGoogleCal = <f:if condition="{settings.hideAddtoGoogleCalendarButton}"><f:then>''</f:then><f:else>'<a href="' + event.url + '" title="<f:translate key='event_add_to_google_title' />" class="fc-addtogooglebutton"><f:translate key="event_add_to_google" /></a>'</f:else></f:if>;
+            var eventButtons = '';
+            if(downloadIcal != '' || addToGoogleCal != '') <![CDATA[{]]>
+                eventButtons = '<div class="fc-buttons">' + downloadIcal + addToGoogleCal + '</div>';
+            <![CDATA[}]]>
+            var eventLocation = '';
+            if(event.location != '') <![CDATA[{]]>
+                eventLocation += '<dt><f:translate key="event_location" /></dt><dd>';
+                eventLocation += <f:if condition="{settings.noGoogleMapsLink}"><f:then>''</f:then><f:else>'<a href="http://maps.google.com/maps?q=' + $.URLEncode(event.location) + '" target="googlemaps" title="<f:translate key='event_location_google_maps_link_title' />">'</f:else></f:if>;
+                eventLocation += event.location;
+                eventLocation += <f:if condition="{settings.noGoogleMapsLink}"><f:then>''</f:then><f:else>'</a>'</f:else></f:if>;
+                eventLocation += '</dd>';
+            <![CDATA[}]]>
+            eventDialog.append('<div class="fc-description">' + event.description + '</div><dl><dt><f:translate key="event_duration" /></dt><dd>' + eventDay + '&nbsp;&nbsp;' + eventStart +  '&nbsp;–&nbsp;' + eventEnd + '</dd>' + eventLocation + '</dl>' + eventButtons)
+                    .dialog(<![CDATA[{]]>
+                                title: event.title,
+                                width: 400,
+                                modal: true
+                            <![CDATA[}]]>);
+            $('a.fc-icalbutton').button(<![CDATA[{]]> icons: <![CDATA[{]]>primary: 'ui-icon-circle-arrow-s'<![CDATA[}}]]>);
+            $('a.fc-addtogooglebutton').button(<![CDATA[{]]> icons: <![CDATA[{]]>primary: 'ui-icon-circle-plus'<![CDATA[}}]]>);
+            return false;
+        <![CDATA[}]]>,
+        loading: function(bool) <![CDATA[{]]>
+            if (bool) <![CDATA[{]]>
+                $('#{contentKey}_overlay').show();
+                $('#{contentKey}_loading').show();
+            <![CDATA[}]]> else <![CDATA[{]]>
+                $('#{contentKey}_loading').hide();
+                $('#{contentKey}_overlay').hide();
+            <![CDATA[}]]>
+        <![CDATA[}]]>
+
+    <![CDATA[}]]>;
+</script>
