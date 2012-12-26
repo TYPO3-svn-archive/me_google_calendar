@@ -12,25 +12,25 @@ plugin.tx_megooglecalendar {
 		storagePid =
 	}
 	settings {
-		# cat=plugin.megooglecalendar/file/10; type=string; label=Path to css file: Default - EXT:me_google_calendar/Resources/fullcalendar.css;
+		# cat=plugin.megooglecalendar/file/10; type=string; label=Path to css file: Default - EXT:me_google_calendar/Resources/Public/StyleSheets/fullcalendar.css;
 		cssPath = EXT:me_google_calendar/Resources/Public/StyleSheets/fullcalendar.css
 
-		# cat=plugin.megooglecalendar/file/20; type=string; label=Path to theme css file: Default - EXT:me_google_calendar/Resources/themes/smoothness/jquery-ui-1.8.16.custom.css;
-		cssThemePath = EXT:me_google_calendar/Resources/Public/JavaScripts/themes/smoothness/jquery-ui-1.8.16.custom.css
+		# cat=plugin.megooglecalendar/file/20; type=string; label=Path to theme css file: Default - EXT:me_google_calendar/Resources/Public/JavaScripts/themes/smoothness/jquery-ui-1.9.2.custom.min.css;
+		cssThemePath = EXT:me_google_calendar/Resources/Public/JavaScripts/themes/smoothness/jquery-ui-1.9.2.custom.min.css
 
-		# cat=plugin.megooglecalendar/file/30; type=string; label=Path to jQuery file: Default - EXT:me_google_calendar/Resources/jquery/jquery-1.6.2.min.js;
-		jQueryPath = EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-1.6.2.min.js
+		# cat=plugin.megooglecalendar/file/30; type=string; label=Path to jQuery file: Default - EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-1.8.3.min.js;
+		jQueryPath = EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-1.8.3.min.js
 
-		# cat=plugin.megooglecalendar/file/40; type=string; label=Path to jQuery Ui file: Default - EXT:me_google_calendar/Resources/jquery/jquery-ui-1.8.16.custom.min.js;
-		jQueryUiPath = EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-ui-1.8.16.custom.min.js
+		# cat=plugin.megooglecalendar/file/40; type=string; label=Path to jQuery Ui file: Default - EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-ui-1.9.2.custom.min.js;
+		jQueryUiPath = EXT:me_google_calendar/Resources/Public/JavaScripts/jquery-ui-1.9.2.custom.min.js
 
-		# cat=plugin.megooglecalendar/file/50; type=string; label=Path to fullcalendar.js file: Default - EXT:me_google_calendar/Resources/fullcalendar.min.js;
+		# cat=plugin.megooglecalendar/file/50; type=string; label=Path to fullcalendar.js file: Default - EXT:me_google_calendar/Resources/Public/JavaScripts/fullcalendar.min.js;
 		fullCalendarPath = EXT:me_google_calendar/Resources/Public/JavaScripts/fullcalendar.min.js
 
-		# cat=plugin.megooglecalendar/file/60; type=string; label=Path to jQuery plugin gcal file: Default - EXT:me_google_calendar/Resources/gcal.js;
+		# cat=plugin.megooglecalendar/file/60; type=string; label=Path to jQuery plugin gcal file: Default - EXT:me_google_calendar/Resources/Public/JavaScripts/gcal.js;
 		gcalPath = EXT:me_google_calendar/Resources/Public/JavaScripts/gcal.js
 
-		# cat=plugin.megooglecalendar/file/70; type=string; label=Path to jQuery calendar file: Default - EXT:me_google_calendar/Resources/me_google_calendar.js;
+		# cat=plugin.megooglecalendar/file/70; type=string; label=Path to jQuery calendar file: Default - EXT:me_google_calendar/Resources/Public/JavaScripts/me_google_calendar.js;
 		meGoogleCalendarPath = EXT:me_google_calendar/Resources/Public/JavaScripts/me_google_calendar.js
 
 		# cat=plugin.megooglecalendar/enable/10; type=boolean; label=jQuery external: The given path is an external url (starts with //);
@@ -54,10 +54,10 @@ plugin.tx_megooglecalendar {
 		# cat=plugin.megooglecalendar/enable/70; type=boolean; label=Disable minify me_google_calendar: If set, me_google_calendar.js will *not* be minified
 		meGoogleCalendarDisableCompression = 0
 
-		# cat=plugin.megooglecalendar/enable/80; type=options[includeJSFooterlibs,includeJSlibs]; label=jsLibsPosition: includeJSFooterlibs: Javascript libraries in footer / includeJSlibs: Javascript libraries in header;
+		# cat=plugin.megooglecalendar/enable/80; type=options[Footer=includeJSFooterlibs,Header=includeJSlibs]; label=jsLibsPosition: includeJSFooterlibs: Javascript libraries in footer / includeJSlibs: Javascript libraries in header;
 		jsLibsPosition = includeJSFooterlibs
 
-		# cat=plugin.megooglecalendar/enable/90; type=options[includeJSFooter,includeJS]; label=jsPosition: includeJSFooter: Javascript in footer / includeJS: Javascript in header;
+		# cat=plugin.megooglecalendar/enable/90; type=options[Footer=includeJSFooter,Header=includeJS]; label=jsPosition: includeJSFooter: Javascript in footer / includeJS: Javascript in header;
 		jsPosition = includeJSFooter
 
 		# cat=plugin.megooglecalendar/content/020; type=int+; label=Recursive level: Default - 0;

@@ -107,7 +107,7 @@ $TCA['tx_megooglecalendar_domain_model_calendar'] = array(
 			'label' => 'LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.url',
 			'config' => array(
 				'type' => 'input',
-				'size' => 30,
+				'size' => 50,
 				'eval' => 'trim,required'
 			),
 		),

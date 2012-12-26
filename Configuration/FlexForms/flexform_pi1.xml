@@ -439,7 +439,7 @@
 				</config>
 			</TCEforms>
 		</settings.cssThemePath>
-		<settings.pages>
+		<persistence.storagePid>
 			<TCEforms>
 			<exclude>1</exclude>
 			<label>LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.startingpoint</label>
@@ -453,8 +453,8 @@
 				<show_thumbs>1</show_thumbs>
 			</config>
 			</TCEforms>
-		</settings.pages>
-		<settings.recursive>
+		</persistence.storagePid>
+		<persistence.recursive>
 			<TCEforms>
 			<label>LLL:EXT:me_google_calendar/Resources/Private/Language/locallang_db.xlf:tx_megooglecalendar_domain_model_calendar.pi_flexform.recursive</label>
 				<config>
@@ -494,7 +494,7 @@
 					<size>1</size>
 				</config>
 			</TCEforms>
-		</settings.recursive>
+		</persistence.recursive>
 		</el>
 	</ROOT>
 	</s_misc>

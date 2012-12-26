@@ -1,6 +1,6 @@
 /************************************************************************
  *
- *  (c) 2012 Alexander Grein <alexander.grein@in2code.de>, in2code GmbH
+ *  (c) 2012 Alexander Grein <mail@mediaessenz.de>, MEDIA::ESSENZ
  *
  ************************************************************************/
 
